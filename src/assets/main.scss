@@ -10,6 +10,9 @@ body {
     padding: 0;
     margin: 0;
     color: #515151;
+
+    //ios scroll
+    -webkit-overflow-scrolling: touch;
 }
 
 a {
@@ -77,8 +80,8 @@ main{
         background-size: cover;
         background-repeat: no-repeat;
         background-image: url('assets/img/leather_bg.png');
-        max-height: 976px;
-        overflow: scroll;
+        overflow-x: hidden;
+        padding: 0;
         
         .topBarTitle{
             width: 100%;
@@ -105,18 +108,26 @@ main{
 
         div.barCol{
             filter: drop-shadow(0px 0px 5px rgba(50, 50, 0, 0.5));
+            &:nth-child(odd){
+                .octagonBar{
+                    margin-left: calc(100% - 154px);
+                }
+            }
             .octagonBar{
                 height: 194px;
-                width: 90%;
-                margin: 10px auto;
+                width: 154px;
+                margin-top: 10px;
+                margin-bottom: 10px;
                 background-color: #fff;
                 clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
-    
+
+
                 .title{
                     top: 0;
                     background-color: #9D086B;
                     height: 15%;
                     width: 100%;
+                    font-size: 14px;
                     text-align: center;
                     color: #fff;
                 }
@@ -126,7 +137,7 @@ main{
                     margin: 8px 0 0 0;
                     img{
                         height: 90px;
-                        clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
+                        clip-path: polygon(10% 0%, 90% 0%, 100% 15%, 100% 85%, 90% 100%, 10% 100%, 0% 85%, 0% 15%);
                     }
                 }
     
@@ -145,13 +156,27 @@ main{
                     margin: 5px 0;
                     padding: 0 15px;
                     p{
-                        font-size: 14px;
-                        line-height: 16px;
+                        font-size: 12px;
+                        line-height: 14px;
                         margin: 0;
                     }
                 }
             }
         }
 
+        #page_bottom{
+            height: 147px;
+            background-position: right center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url('assets/img/purple_stripe.png');
+            text-align: center;
+            img{
+                margin: 30px auto 0 auto;
+                width: 212px;
+            }
+        }
     }
+
+
 }

@@ -3,7 +3,6 @@ import { useRouter, useRoute } from "vue-router";
 // mounted
 import { onMounted, ref } from "vue";
 import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
 import { useI18n } from "vue-i18n";
 import apiService from "@/service/api-service.js";
 import Bootstrap from "bootstrap/dist/js/bootstrap.bundle";
@@ -11,7 +10,6 @@ import Bootstrap from "bootstrap/dist/js/bootstrap.bundle";
 export default {
   components: {
     Header,
-    Footer,
   },
   setup() {
     const router = useRouter();
@@ -73,6 +71,52 @@ export default {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="col-12 px-5 areaHeading">
+          <h5>中部店家</h5>
+        </div>
+        <div class="col-12">
+          <div class="row">
+            <div class="col-6 barCol">
+              <div class="octagonBar">
+                <div class="title">
+                  標題標題標題標題
+                </div>
+                <div class="bar_img">
+                  <img src="/assets/img/bar_image_example.png" alt="1" />
+                </div>
+                <div class="bar_title">
+                  <h5>Pun</h5>
+                </div>
+                <div class="bar_address">
+                  <p>📍台北市大安區四段378巷5號1樓</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 barCol">
+              <div class="octagonBar">
+                <div class="title">
+                  標題標題標題標題
+                </div>
+                <div class="bar_img">
+                  <img src="/assets/img/bar_image_example.png" alt="1" />
+                </div>
+                <div class="bar_title">
+                  <h5>Pun</h5>
+                </div>
+                <div class="bar_address">
+                  <p>📍台北市大安區四段378巷5號1樓</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 px-5 areaHeading">
+          <h5>南部店家</h5>
+        </div>
+        <div class="col-12">
+          <div class="row">
             <div class="col-6 barCol">
               <div class="octagonBar">
                 <div class="title">
@@ -108,7 +152,9 @@ export default {
           </div>
         </div>
       </div>
+      <div id="page_bottom">
+        <img src="/assets/img/previous.png" />
+      </div>
     </div>
   </main>
-  <Footer />
 </template>
