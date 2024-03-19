@@ -37,13 +37,11 @@ export default {
         <div class="col-12 px-5 areaHeading">
           <h5>北部店家</h5>
         </div>
-        <div class="col-12">
-          <div class="row">
-            <div class="col-6 barCol">
+        <div class="barContainer">
+          <div class="barRow">
+            <div class="barCol">
               <div class="octagonBar">
-                <div class="title">
-                  標題標題標題標題
-                </div>
+                <div class="title">標題標題標題標題</div>
                 <div class="bar_img">
                   <img src="/assets/img/bar_image_example.png" alt="1" />
                 </div>
@@ -55,11 +53,133 @@ export default {
                 </div>
               </div>
             </div>
-            <div class="col-6 barCol">
+            <div class="barCol">
               <div class="octagonBar">
-                <div class="title">
-                  標題標題標題標題
+                <div class="title">標題標題標題標題</div>
+                <div class="bar_img">
+                  <img src="/assets/img/bar_image_example.png" alt="1" />
                 </div>
+                <div class="bar_title">
+                  <h5>Pun</h5>
+                </div>
+                <div class="bar_address">
+                  <p>📍台北市大安區四段378巷5號1樓</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="barRow">
+            <div class="barCol">
+              <div class="octagonBar">
+                <div class="title">標題標題標題標題</div>
+                <div class="bar_img">
+                  <img src="/assets/img/bar_image_example.png" alt="1" />
+                </div>
+                <div class="bar_title">
+                  <h5>Pun</h5>
+                </div>
+                <div class="bar_address">
+                  <p>📍台北市大安區四段378巷5號1樓</p>
+                </div>
+              </div>
+            </div>
+            <div class="barCol">
+              <div class="octagonBar">
+                <div class="title">標題標題標題標題</div>
+                <div class="bar_img">
+                  <img src="/assets/img/bar_image_example.png" alt="1" />
+                </div>
+                <div class="bar_title">
+                  <h5>Pun</h5>
+                </div>
+                <div class="bar_address">
+                  <p>📍台北市大安區四段378巷5號1樓</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="barRow">
+            <div class="barCol">
+              <div class="octagonBar">
+                <div class="title">標題標題標題標題</div>
+                <div class="bar_img">
+                  <img src="/assets/img/bar_image_example.png" alt="1" />
+                </div>
+                <div class="bar_title">
+                  <h5>Pun</h5>
+                </div>
+                <div class="bar_address">
+                  <p>📍台北市大安區四段378巷5號1樓</p>
+                </div>
+              </div>
+            </div>
+            <div class="barCol">
+              <div class="octagonBar">
+                <div class="title">標題標題標題標題</div>
+                <div class="bar_img">
+                  <img src="/assets/img/bar_image_example.png" alt="1" />
+                </div>
+                <div class="bar_title">
+                  <h5>Pun</h5>
+                </div>
+                <div class="bar_address">
+                  <p>📍台北市大安區四段378巷5號1樓</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="barRow">
+            <div class="barCol">
+              <div class="octagonBar">
+                <div class="title">標題標題標題標題</div>
+                <div class="bar_img">
+                  <img src="/assets/img/bar_image_example.png" alt="1" />
+                </div>
+                <div class="bar_title">
+                  <h5>Pun</h5>
+                </div>
+                <div class="bar_address">
+                  <p>📍台北市大安區四段378巷5號1樓</p>
+                </div>
+              </div>
+            </div>
+            <div class="barCol">
+              <div class="octagonBar">
+                <div class="title">標題標題標題標題</div>
+                <div class="bar_img">
+                  <img src="/assets/img/bar_image_example.png" alt="1" />
+                </div>
+                <div class="bar_title">
+                  <h5>Pun</h5>
+                </div>
+                <div class="bar_address">
+                  <p>📍台北市大安區四段378巷5號1樓</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="barRow">
+            <div class="barCol">
+              <div class="octagonBar">
+                <div class="title">標題標題標題標題</div>
+                <div class="bar_img">
+                  <img src="/assets/img/bar_image_example.png" alt="1" />
+                </div>
+                <div class="bar_title">
+                  <h5>Pun</h5>
+                </div>
+                <div class="bar_address">
+                  <p>📍台北市大安區四段378巷5號1樓</p>
+                </div>
+              </div>
+            </div>
+            <div class="barCol">
+              <div class="octagonBar">
+                <div class="title">標題標題標題標題</div>
                 <div class="bar_img">
                   <img src="/assets/img/bar_image_example.png" alt="1" />
                 </div>
@@ -73,84 +193,8 @@ export default {
             </div>
           </div>
         </div>
-        <div class="col-12 px-5 areaHeading">
-          <h5>中部店家</h5>
-        </div>
-        <div class="col-12">
-          <div class="row">
-            <div class="col-6 barCol">
-              <div class="octagonBar">
-                <div class="title">
-                  標題標題標題標題
-                </div>
-                <div class="bar_img">
-                  <img src="/assets/img/bar_image_example.png" alt="1" />
-                </div>
-                <div class="bar_title">
-                  <h5>Pun</h5>
-                </div>
-                <div class="bar_address">
-                  <p>📍台北市大安區四段378巷5號1樓</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 barCol">
-              <div class="octagonBar">
-                <div class="title">
-                  標題標題標題標題
-                </div>
-                <div class="bar_img">
-                  <img src="/assets/img/bar_image_example.png" alt="1" />
-                </div>
-                <div class="bar_title">
-                  <h5>Pun</h5>
-                </div>
-                <div class="bar_address">
-                  <p>📍台北市大安區四段378巷5號1樓</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 px-5 areaHeading">
-          <h5>南部店家</h5>
-        </div>
-        <div class="col-12">
-          <div class="row">
-            <div class="col-6 barCol">
-              <div class="octagonBar">
-                <div class="title">
-                  標題標題標題標題
-                </div>
-                <div class="bar_img">
-                  <img src="/assets/img/bar_image_example.png" alt="1" />
-                </div>
-                <div class="bar_title">
-                  <h5>Pun</h5>
-                </div>
-                <div class="bar_address">
-                  <p>📍台北市大安區四段378巷5號1樓</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 barCol">
-              <div class="octagonBar">
-                <div class="title">
-                  標題標題標題標題
-                </div>
-                <div class="bar_img">
-                  <img src="/assets/img/bar_image_example.png" alt="1" />
-                </div>
-                <div class="bar_title">
-                  <h5>Pun</h5>
-                </div>
-                <div class="bar_address">
-                  <p>📍台北市大安區四段378巷5號1樓</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+
       </div>
       <div id="page_bottom">
         <img src="/assets/img/previous.png" />
