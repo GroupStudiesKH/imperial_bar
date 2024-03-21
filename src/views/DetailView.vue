@@ -52,11 +52,11 @@ export default {
     <div class="container" id="bars">
       <div class="row">
         <div class="col-12 px-5 BarDetailTitle">
-          <h4>本月主打星店家</h4>
+          <h4>{{ shopData.store_name }}</h4>
         </div>
         <div class="col-12 px-5 BarDetailName">
           <div>
-            <h4>{{ shopData.store_name }}</h4>
+            <h4>{{ shopData.subtitle }}</h4>
             <img src="/assets/img/bar_detail_example.png" />
           </div>
         </div>
