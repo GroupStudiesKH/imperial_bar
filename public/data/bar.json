@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "location": "北區",
+    "location": "北部",
     "class": "晚餐小酌",
     "store_name": "Four play 1",
     "store_address": "台北市大安區東豐街49號",
@@ -12,7 +12,7 @@
   },
   {
     "id": 2,
-    "location": "北區",
+    "location": "北部",
     "class": "晚餐小酌",
     "store_name": "Four play 2",
     "store_address": "台北市大安區東豐街61號",
@@ -23,7 +23,7 @@
   },
   {
     "id": 3,
-    "location": "北區",
+    "location": "北部",
     "class": "深夜酒吧",
     "store_name": "Enjoy",
     "store_address": "台北市中正區思源街1號永福橋下 水岸廣場",
@@ -34,7 +34,7 @@
   },
   {
     "id": 4,
-    "location": "北區",
+    "location": "北部",
     "class": "",
     "store_name": "Chill bistro(無續約)",
     "store_address": "台北市信義區基隆路一段163號後門",
@@ -45,7 +45,7 @@
   },
   {
     "id": 5,
-    "location": "北區",
+    "location": "北部",
     "class": "深夜酒吧",
     "store_name": "Oasis tavern",
     "store_address": "台北市信義區基隆路二段117號",
@@ -56,7 +56,7 @@
   },
   {
     "id": 6,
-    "location": "北區",
+    "location": "北部",
     "class": "特色店家",
     "store_name": "The public house",
     "store_address": "台北市大安區信義路四段143號一樓",
@@ -67,7 +67,7 @@
   },
   {
     "id": 7,
-    "location": "北區",
+    "location": "北部",
     "class": "派對聚餐",
     "store_name": "Nep",
     "store_address": "台北市中山區天津街63號號B1",
@@ -78,7 +78,7 @@
   },
   {
     "id": 8,
-    "location": "北區",
+    "location": "北部",
     "class": "",
     "store_name": "Ganymede(無續約)",
     "store_address": "台北市大安區敦化南路一段190巷2號",
@@ -89,7 +89,7 @@
   },
   {
     "id": 9,
-    "location": "北區",
+    "location": "北部",
     "class": "日式居酒屋",
     "store_name": "時光小酒館 Bistro",
     "store_address": "台北市松山區敦化北路120巷16號",
@@ -100,7 +100,7 @@
   },
   {
     "id": 10,
-    "location": "北區",
+    "location": "北部",
     "class": "晚餐小酌",
     "store_name": "The British Club",
     "store_address": "台北市大安區仁愛路四段222巷15號",
@@ -111,7 +111,7 @@
   },
   {
     "id": 11,
-    "location": "北區",
+    "location": "北部",
     "class": "特色店家",
     "store_name": "Liquid Art",
     "store_address": "台北市大安區建國南路一段212巷61號1樓",
@@ -122,7 +122,7 @@
   },
   {
     "id": 12,
-    "location": "北區",
+    "location": "北部",
     "class": "深夜酒吧",
     "store_name": "Old brick",
     "store_address": "台北市大安區安和路二段24號",
@@ -133,7 +133,7 @@
   },
   {
     "id": 13,
-    "location": "北區",
+    "location": "北部",
     "class": "深夜酒吧",
     "store_name": "Drive Yourself",
     "store_address": "台北市大安區延吉街62巷12號",
@@ -144,7 +144,7 @@
   },
   {
     "id": 14,
-    "location": "北區",
+    "location": "北部",
     "class": "深夜酒吧",
     "store_name": "Dark seat",
     "store_address": "台北市中山區林森北路133巷16號號地下室",
@@ -155,7 +155,7 @@
   },
   {
     "id": 15,
-    "location": "北區",
+    "location": "北部",
     "class": "派對聚餐",
     "store_name": "Potions Magic Bar",
     "store_address": "台北市大安區安和路一段55-1號",
@@ -166,7 +166,7 @@
   },
   {
     "id": 16,
-    "location": "北區",
+    "location": "北部",
     "class": "日式居酒屋",
     "store_name": "Ichi",
     "store_address": "台北市大安區安和路二段40號",
@@ -177,7 +177,7 @@
   },
   {
     "id": 17,
-    "location": "北區",
+    "location": "北部",
     "class": "晚餐小酌",
     "store_name": "Pico Pico",
     "store_address": "台北市大安區安和路一段102巷28號",
@@ -188,7 +188,7 @@
   },
   {
     "id": 18,
-    "location": "北區",
+    "location": "北部",
     "class": "特色店家",
     "store_name": "Pun",
     "store_address": "台北市大安區信義路四段378巷5號1樓",
@@ -199,7 +199,7 @@
   },
   {
     "id": 19,
-    "location": "北區",
+    "location": "北部",
     "class": "派對聚餐",
     "store_name": "Bar Freedom",
     "store_address": "台北市中山區中山北路二段45巷11號",
@@ -210,7 +210,7 @@
   },
   {
     "id": 20,
-    "location": "北區",
+    "location": "北部",
     "class": "派對聚餐",
     "store_name": "Valley22",
     "store_address": "台北市大安區安和路二段22號",
@@ -221,7 +221,7 @@
   },
   {
     "id": 21,
-    "location": "北區",
+    "location": "北部",
     "class": "深夜酒吧",
     "store_name": "Shotia",
     "store_address": "台北市大安區樂利路50號",
@@ -232,7 +232,7 @@
   },
   {
     "id": 22,
-    "location": "北區",
+    "location": "北部",
     "class": "日式居酒屋",
     "store_name": "Bar Emperor",
     "store_address": "台北市大同區華陰街33號1樓",
@@ -243,7 +243,7 @@
   },
   {
     "id": 23,
-    "location": "北區",
+    "location": "北部",
     "class": "晚餐小酌",
     "store_name": "MOD",
     "store_address": "台北市大安區仁愛路四段345巷4弄40號",
@@ -254,7 +254,7 @@
   },
   {
     "id": 24,
-    "location": "北區",
+    "location": "北部",
     "class": "特色店家",
     "store_name": "Posino",
     "store_address": "台北市大安區基隆路二段128號2樓之2",
@@ -265,7 +265,7 @@
   },
   {
     "id": 25,
-    "location": "北區",
+    "location": "北部",
     "class": "晚餐小酌",
     "store_name": "Le Kief",
     "store_address": "台北市大安區復興南路一段107巷5弄10號1樓",
@@ -276,7 +276,7 @@
   },
   {
     "id": 26,
-    "location": "北區",
+    "location": "北部",
     "class": "特色店家",
     "store_name": "Tei by obond",
     "store_address": "台北市信義區光復南路553號",
@@ -287,7 +287,7 @@
   },
   {
     "id": 27,
-    "location": "北區",
+    "location": "北部",
     "class": "晚餐小酌",
     "store_name": "Sea To Sky",
     "store_address": "台北市信義區忠孝東路五段68號47樓",
@@ -298,7 +298,7 @@
   },
   {
     "id": 28,
-    "location": "北區",
+    "location": "北部",
     "class": "",
     "store_name": "Coya(刪除0201)",
     "store_address": "台北市松山區市民大道四段129號2樓",
@@ -309,7 +309,7 @@
   },
   {
     "id": 29,
-    "location": "北區",
+    "location": "北部",
     "class": "派對聚餐",
     "store_name": "Hooters 慶城",
     "store_address": "台北市松山區慶城街18號",
@@ -320,7 +320,7 @@
   },
   {
     "id": 30,
-    "location": "北區",
+    "location": "北部",
     "class": "派對聚餐",
     "store_name": "Hooters 信義",
     "store_address": "台北市信義區松仁路58號14樓",
@@ -331,7 +331,7 @@
   },
   {
     "id": 31,
-    "location": "北區",
+    "location": "北部",
     "class": "派對聚餐",
     "store_name": "BONSHOT",
     "store_address": "台北市信義區松仁路99號B1-1",
@@ -342,7 +342,7 @@
   },
   {
     "id": 32,
-    "location": "北區",
+    "location": "北部",
     "class": "深夜酒吧",
     "store_name": "WESTLAND",
     "store_address": "台北市萬華區漢口街二段117號",
@@ -353,7 +353,7 @@
   },
   {
     "id": 33,
-    "location": "北區",
+    "location": "北部",
     "class": "晚餐小酌",
     "store_name": "酒食人餐酒館",
     "store_address": "新北市板橋區中山路一段124號",
@@ -364,7 +364,7 @@
   },
   {
     "id": 34,
-    "location": "北區",
+    "location": "北部",
     "class": "深夜酒吧",
     "store_name": "光隱 INROOM",
     "store_address": "台北市士林區文林路110巷15號",
@@ -375,7 +375,7 @@
   },
   {
     "id": 35,
-    "location": "北區",
+    "location": "北部",
     "class": "晚餐小酌",
     "store_name": "Trio bistro",
     "store_address": "台北市忠孝東路2段64巷4號",
@@ -386,7 +386,7 @@
   },
   {
     "id": 36,
-    "location": "北區",
+    "location": "北部",
     "class": "晚餐小酌",
     "store_name": "Pan House",
     "store_address": "台北市大安區延吉街131巷9號",
@@ -397,7 +397,7 @@
   },
   {
     "id": 37,
-    "location": "北區",
+    "location": "北部",
     "class": "派對聚餐",
     "store_name": "BN Inn",
     "store_address": "台北市松山區敦化南路1段69號",
@@ -408,7 +408,7 @@
   },
   {
     "id": 38,
-    "location": "北區",
+    "location": "北部",
     "class": "特色店家",
     "store_name": "Olive by Sandalwood",
     "store_address": "台北市大安區信義路二段198巷3號1樓",
@@ -419,7 +419,7 @@
   },
   {
     "id": 39,
-    "location": "北區",
+    "location": "北部",
     "class": "特色店家",
     "store_name": "Sandalwood",
     "store_address": "台北市信義區基隆路二段113號1樓",
@@ -430,7 +430,7 @@
   },
   {
     "id": 40,
-    "location": "北區",
+    "location": "北部",
     "class": "",
     "store_name": "Settle(刪除0201)",
     "store_address": "台北市大安區光復南路240巷29號",
@@ -441,7 +441,7 @@
   },
   {
     "id": 41,
-    "location": "北區",
+    "location": "北部",
     "class": "晚餐小酌",
     "store_name": "Tigerlily",
     "store_address": "台北市大安區敦化南路一段236巷38號",
@@ -452,7 +452,7 @@
   },
   {
     "id": 42,
-    "location": "北區",
+    "location": "北部",
     "class": "深夜酒吧",
     "store_name": "Bar 24",
     "store_address": "台北市信義區松壽路𝟐𝟐號𝟓樓",
@@ -463,7 +463,7 @@
   },
   {
     "id": 43,
-    "location": "北區",
+    "location": "北部",
     "class": "",
     "store_name": "WOK by O'band(刪除0201)",
     "store_address": "台北市中山區龍江路18號",
@@ -474,7 +474,7 @@
   },
   {
     "id": 44,
-    "location": "中區",
+    "location": "中部",
     "class": "派對聚餐",
     "store_name": "Rico Padre",
     "store_address": "台中市西屯區馬龍潭路119號",
@@ -485,7 +485,7 @@
   },
   {
     "id": 45,
-    "location": "中區",
+    "location": "中部",
     "class": "特色店家",
     "store_name": "禾 Demeter",
     "store_address": "403台中市西區向上路一段56號1樓",
@@ -496,7 +496,7 @@
   },
   {
     "id": 46,
-    "location": "中區",
+    "location": "中部",
     "class": "深夜酒吧",
     "store_name": "Puzzle-cuisine",
     "store_address": "407台中市西屯區臺灣大道二段818號",
@@ -507,7 +507,7 @@
   },
   {
     "id": 47,
-    "location": "中區",
+    "location": "中部",
     "class": "派對聚餐",
     "store_name": "Left",
     "store_address": "台中市西區華美街480巷6號",
@@ -518,7 +518,7 @@
   },
   {
     "id": 48,
-    "location": "中區",
+    "location": "中部",
     "class": "派對聚餐",
     "store_name": "ASH",
     "store_address": "403台中市西區臺灣大道二段10號",
@@ -529,7 +529,7 @@
   },
   {
     "id": 49,
-    "location": "中區",
+    "location": "中部",
     "class": "晚餐小酌",
     "store_name": "Tipsy Room",
     "store_address": "403台中市西區向上路一段260號",
@@ -540,7 +540,7 @@
   },
   {
     "id": 50,
-    "location": "中區",
+    "location": "中部",
     "class": "晚餐小酌",
     "store_name": "Drinktopia",
     "store_address": "408台中市南屯區大墩十二街262號",
@@ -551,7 +551,7 @@
   },
   {
     "id": 51,
-    "location": "中區",
+    "location": "中部",
     "class": "深夜酒吧",
     "store_name": "Ruler",
     "store_address": "407台中市西屯區寶慶街30巷13號",
@@ -562,7 +562,7 @@
   },
   {
     "id": 52,
-    "location": "中區",
+    "location": "中部",
     "class": "派對聚餐",
     "store_name": "Myth ocean",
     "store_address": "408台中市南屯區大觀路58號",
@@ -573,7 +573,7 @@
   },
   {
     "id": 53,
-    "location": "中區",
+    "location": "中部",
     "class": "",
     "store_name": "AMPM",
     "store_address": "台中市西屯區文心路三段54號1F",
@@ -584,7 +584,7 @@
   },
   {
     "id": 54,
-    "location": "中區",
+    "location": "中部",
     "class": "晚餐小酌",
     "store_name": "鐵克諾 Techno",
     "store_address": "403台中市西區忠明南路329號",
@@ -595,7 +595,7 @@
   },
   {
     "id": 55,
-    "location": "中區",
+    "location": "中部",
     "class": "晚餐小酌",
     "store_name": "Beta",
     "store_address": "407台中市西屯區市政北二路282號",
@@ -606,7 +606,7 @@
   },
   {
     "id": 56,
-    "location": "中區",
+    "location": "中部",
     "class": "特色店家",
     "store_name": "Te amo",
     "store_address": "403台中市西區博館三街54號",
@@ -617,7 +617,7 @@
   },
   {
     "id": 57,
-    "location": "中區",
+    "location": "中部",
     "class": "特色店家",
     "store_name": "Svart Hull",
     "store_address": "40756台中市西屯區寶慶街50巷59號",
@@ -628,7 +628,7 @@
   },
   {
     "id": 58,
-    "location": "中區",
+    "location": "中部",
     "class": "晚餐小酌",
     "store_name": "RiZY",
     "store_address": "403台中市西區向上路一段79巷56號2樓",
@@ -639,7 +639,7 @@
   },
   {
     "id": 59,
-    "location": "中區",
+    "location": "中部",
     "class": "",
     "store_name": "Matches(營業至10/31)",
     "store_address": "403台中市西區東興路三段238號右邊門2 樓",
@@ -650,7 +650,7 @@
   },
   {
     "id": 60,
-    "location": "中區",
+    "location": "中部",
     "class": "派對聚餐",
     "store_name": "Chill Play",
     "store_address": "台中市西屯區市政北二路18-1號4樓",
@@ -661,7 +661,7 @@
   },
   {
     "id": 61,
-    "location": "中區",
+    "location": "中部",
     "class": "深夜酒吧",
     "store_name": "狸腕 Saloon",
     "store_address": "407台中市西屯區文心路二段546號",
@@ -672,7 +672,7 @@
   },
   {
     "id": 62,
-    "location": "中區",
+    "location": "中部",
     "class": "特色店家",
     "store_name": "老裁縫",
     "store_address": "40360台中市西區台灣大道二段333號",
@@ -683,7 +683,7 @@
   },
   {
     "id": 63,
-    "location": "中區",
+    "location": "中部",
     "class": "",
     "store_name": "Somm Juice(不續約)",
     "store_address": "台中市西區美村路一段149巷19號1樓",
@@ -694,7 +694,7 @@
   },
   {
     "id": 64,
-    "location": "中區",
+    "location": "中部",
     "class": "特色店家",
     "store_name": "Bar sloth 樹懶",
     "store_address": "407台中市西屯區大墩路999號2樓",
@@ -705,7 +705,7 @@
   },
   {
     "id": 65,
-    "location": "中區",
+    "location": "中部",
     "class": "派對聚餐",
     "store_name": "Mosso",
     "store_address": "403台中市西區存中街31號",
@@ -716,7 +716,7 @@
   },
   {
     "id": 66,
-    "location": "中區",
+    "location": "中部",
     "class": "特色店家",
     "store_name": "Momori",
     "store_address": "台中市西區台灣大道二段222號",
@@ -727,7 +727,7 @@
   },
   {
     "id": 67,
-    "location": "中區",
+    "location": "中部",
     "class": "晚餐小酌",
     "store_name": "NK",
     "store_address": "台中市西屯區大容東街66號",
@@ -738,7 +738,7 @@
   },
   {
     "id": 68,
-    "location": "中區",
+    "location": "中部",
     "class": "深夜酒吧",
     "store_name": "PM Bistro (刪除)",
     "store_address": "台中市西區臺灣大道二段496號",
@@ -749,7 +749,7 @@
   },
   {
     "id": 69,
-    "location": "中區",
+    "location": "中部",
     "class": "深夜酒吧",
     "store_name": "Blkout shisha",
     "store_address": "台中市西屯區精誠路50巷21號1樓",
@@ -760,7 +760,7 @@
   },
   {
     "id": 70,
-    "location": "中區",
+    "location": "中部",
     "class": "晚餐小酌",
     "store_name": "Vibe",
     "store_address": "台中市西區向上路一段79巷58號",
@@ -771,7 +771,7 @@
   },
   {
     "id": 71,
-    "location": "中區",
+    "location": "中部",
     "class": "晚餐小酌",
     "store_name": "JUP(暫停營業)",
     "store_address": "",
@@ -782,7 +782,7 @@
   },
   {
     "id": 72,
-    "location": "南區",
+    "location": "南部",
     "class": "特色店家",
     "store_name": "Bar Five",
     "store_address": "802高雄市苓雅區仁義街2-4號",
@@ -793,7 +793,7 @@
   },
   {
     "id": 73,
-    "location": "南區",
+    "location": "南部",
     "class": "深夜酒吧",
     "store_name": "9度空間",
     "store_address": "802高雄市苓雅區中山二路468號",
@@ -804,7 +804,7 @@
   },
   {
     "id": 74,
-    "location": "南區",
+    "location": "南部",
     "class": "特色店家",
     "store_name": "Bar Gaz",
     "store_address": "801高雄市前金區自強二路64號2樓",
@@ -815,7 +815,7 @@
   },
   {
     "id": 75,
-    "location": "南區",
+    "location": "南部",
     "class": "特色店家",
     "store_name": "Belon",
     "store_address": "806高雄市前鎮區成功二路39-1號",
@@ -826,7 +826,7 @@
   },
   {
     "id": 76,
-    "location": "南區",
+    "location": "南部",
     "class": "派對聚餐",
     "store_name": "後站",
     "store_address": "807高雄市三民區博愛一路66號",
@@ -837,7 +837,7 @@
   },
   {
     "id": 77,
-    "location": "南區",
+    "location": "南部",
     "class": "特色店家",
     "store_name": "sauga",
     "store_address": "806高雄市前鎮區成功二路39之2號",
@@ -848,7 +848,7 @@
   },
   {
     "id": 78,
-    "location": "南區",
+    "location": "南部",
     "class": "晚餐小酌",
     "store_name": "TACB",
     "store_address": "800高雄市新興區林森二路135巷35號",
@@ -859,7 +859,7 @@
   },
   {
     "id": 79,
-    "location": "南區",
+    "location": "南部",
     "class": "派對聚餐",
     "store_name": "Luxe",
     "store_address": "801高雄市前金區中華四路282號1樓",
@@ -870,7 +870,7 @@
   },
   {
     "id": 80,
-    "location": "南區",
+    "location": "南部",
     "class": "日式居酒屋",
     "store_name": "iki",
     "store_address": "高雄市前金區新田路253巷12號",
@@ -881,10 +881,10 @@
   },
   {
     "id": 81,
-    "location": "南區",
+    "location": "南部",
     "class": "特色店家",
     "store_name": "Han-Jia",
-    "store_address": "702台南市南區西門路一段669號",
+    "store_address": "702台南市南部西門路一段669號",
     "store_fb": "https://www.facebook.com/thehanjia2020/?locale=zh_TW",
     "store_ig": "https://www.instagram.com/thehanjiapairingdinner/",
     "subtitle": "高CP值 工業風酒吧",
@@ -892,7 +892,7 @@
   },
   {
     "id": 82,
-    "location": "南區",
+    "location": "南部",
     "class": "特色店家",
     "store_name": "巴賽隆納",
     "store_address": "高雄市苓雅區中正二路165號",
@@ -903,7 +903,7 @@
   },
   {
     "id": 83,
-    "location": "南區",
+    "location": "南部",
     "class": "特色店家",
     "store_name": "Dark Circles",
     "store_address": "700台南市中西區友愛街152號2樓",
@@ -914,7 +914,7 @@
   },
   {
     "id": 84,
-    "location": "南區",
+    "location": "南部",
     "class": "深夜酒吧",
     "store_name": "June 14th",
     "store_address": "台南市東區東門路二段365巷13號",
@@ -925,7 +925,7 @@
   },
   {
     "id": 85,
-    "location": "南區",
+    "location": "南部",
     "class": "特色店家",
     "store_name": "西部牛仔",
     "store_address": "高雄市三民區天祥二路18號",
@@ -936,7 +936,7 @@
   },
   {
     "id": 86,
-    "location": "南區",
+    "location": "南部",
     "class": "晚餐小酌",
     "store_name": "今日島",
     "store_address": "800高雄市新興區玉竹一街17巷2弄1號2樓",
@@ -947,7 +947,7 @@
   },
   {
     "id": 87,
-    "location": "南區",
+    "location": "南部",
     "class": "特色店家",
     "store_name": "灣兜",
     "store_address": "807高雄市三民區大順二路733號",
@@ -958,7 +958,7 @@
   },
   {
     "id": 88,
-    "location": "南區",
+    "location": "南部",
     "class": "特色店家",
     "store_name": "Phowa",
     "store_address": "700台南市中西區新美街121號",
@@ -969,7 +969,7 @@
   },
   {
     "id": 89,
-    "location": "南區",
+    "location": "南部",
     "class": "深夜酒吧",
     "store_name": "Corner",
     "store_address": "700台南市中西區武德街22號",
@@ -980,7 +980,7 @@
   },
   {
     "id": 90,
-    "location": "南區",
+    "location": "南部",
     "class": "晚餐小酌",
     "store_name": "Ruelle",
     "store_address": "800高雄市新興區林森二路135巷32號",
@@ -991,7 +991,7 @@
   },
   {
     "id": 91,
-    "location": "南區",
+    "location": "南部",
     "class": "晚餐小酌",
     "store_name": "無名會館 Wuming Bar",
     "store_address": "801高雄市前金區仁德街246號",
@@ -1002,7 +1002,7 @@
   },
   {
     "id": 92,
-    "location": "南區",
+    "location": "南部",
     "class": "深夜酒吧",
     "store_name": "Bar diary",
     "store_address": "804高雄市鼓山區富農路80號",
@@ -1013,7 +1013,7 @@
   },
   {
     "id": 93,
-    "location": "南區",
+    "location": "南部",
     "class": "晚餐小酌",
     "store_name": "Jenny",
     "store_address": "高雄市鼓山區青海路155號",
@@ -1024,7 +1024,7 @@
   },
   {
     "id": 94,
-    "location": "南區",
+    "location": "南部",
     "class": "特色店家",
     "store_name": "Aqua",
     "store_address": "高雄市前鎮區廣西路218號",
@@ -1035,7 +1035,7 @@
   },
   {
     "id": 95,
-    "location": "南區",
+    "location": "南部",
     "class": "深夜酒吧",
     "store_name": "Midnight",
     "store_address": "台南市東區小東路296號",
@@ -1046,7 +1046,7 @@
   },
   {
     "id": 96,
-    "location": "南區",
+    "location": "南部",
     "class": "特色店家",
     "store_name": "Vibe",
     "store_address": "台南市中西區金華路三段143號2樓",

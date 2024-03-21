@@ -14,7 +14,16 @@ export default {
   setup() {
     const router = useRouter();
     const { t, locale } = useI18n();
-    const shopData = ref([]);
+    const shopData = ref({
+      store_name: "",
+      subtitle: "",
+      store_address: "",
+      class: "",
+      description: "",
+      store_fb: "",
+      store_ig: "",
+    
+    });
     const route = useRoute();
     const shopID = route.params.id;
 
@@ -31,6 +40,9 @@ export default {
         }
     }
     
+    const toPrevious = () => {
+      router.go(-1);
+    }
  
     onMounted(() => {
       loadShopData();
@@ -39,7 +51,8 @@ export default {
     return {
       t,
       locale,
-      shopData
+      shopData,
+      toPrevious
     };
   },
 };
@@ -89,7 +102,7 @@ export default {
         </div>
 
         <div class="col-12 px-5 BarDetailAction">
-          <a class="previous"><img src="/assets/img/previous_member.png" /></a>
+          <a class="previous" @click="toPrevious()"><img src="/assets/img/previous_member.png" /></a>
           <a class="getTicket"><img src="/assets/img/get_ticket.png" /></a>
         </div>
       </div>

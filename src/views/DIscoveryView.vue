@@ -4,7 +4,6 @@ import { useRouter, useRoute } from "vue-router";
 import { onMounted, ref } from "vue";
 import Header from "@/components/Header.vue";
 import { useI18n } from "vue-i18n";
-import apiService from "@/service/api-service.js";
 import Bootstrap from "bootstrap/dist/js/bootstrap.bundle";
 
 export default {
@@ -14,12 +13,56 @@ export default {
   setup() {
     const router = useRouter();
     const { t, locale } = useI18n();
+    const shopData = ref([]);
+    const route = useRoute();
+    const shopID = route.params.id;
+    const locationSelected = ref("北部");
+    const styleSelected = ref("");
 
-    onMounted(async () => {});
+    const loadShopData = async () => {
+      try {
+        const response = await fetch("/data/bar.json"); // 載入 JSON 檔案
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        let data = await response.json(); // 將 JSON 資料轉換為陣列
+        shopData.value = data.filter(
+          (item) => item.location == locationSelected.value
+        );
+        if (styleSelected.value != "") {
+          shopData.value = shopData.value.filter(
+            (item) => item.class == styleSelected.value
+          );
+        }
+
+        console.log(shopData.value);
+      } catch (error) {
+        console.error("There was a problem with the fetch operation:", error);
+      }
+    };
+
+    const changeLocation = (location) => {
+      locationSelected.value = location;
+      loadShopData();
+    };
+
+    const changeStyle = (style) => {
+      styleSelected.value = style;
+      loadShopData();
+    };
+
+    onMounted(() => {
+      loadShopData();
+    });
 
     return {
       t,
       locale,
+      shopData,
+      changeLocation,
+      changeStyle,
+      locationSelected,
+      styleSelected,
     };
   },
 };
@@ -80,9 +123,27 @@ export default {
           <h6>地點</h6>
         </div>
         <div class="col-9">
-          <div class="pill active">北部</div>
-          <div class="pill">中部</div>
-          <div class="pill">南部</div>
+          <div
+            class="pill"
+            :class="locationSelected == `北部` ? `active` : ``"
+            @click="changeLocation(`北部`)"
+          >
+            北部
+          </div>
+          <div
+            class="pill"
+            :class="locationSelected == `中部` ? `active` : ``"
+            @click="changeLocation(`中部`)"
+          >
+            中部
+          </div>
+          <div
+            class="pill"
+            :class="locationSelected == `南部` ? `active` : ``"
+            @click="changeLocation(`南部`)"
+          >
+            南部
+          </div>
         </div>
       </div>
 
@@ -91,99 +152,65 @@ export default {
           <h6>風格</h6>
         </div>
         <div class="col-9">
-          <div class="pill active">派對聚餐</div>
-          <div class="pill">深夜酒吧</div>
-          <div class="pill">晚餐小酌</div>
-          <div class="pill">日式居酒屋</div>
-          <div class="pill">特色店家</div>
+          <div
+            class="pill"
+            :class="styleSelected == `派對聚餐` ? `active` : ``"
+            @click="changeStyle(`派對聚餐`)"
+          >
+            派對聚餐
+          </div>
+          <div
+            class="pill"
+            :class="styleSelected == `深夜酒吧` ? `active` : ``"
+            @click="changeStyle(`深夜酒吧`)"
+          >
+            深夜酒吧
+          </div>
+          <div
+            class="pill"
+            :class="styleSelected == `晚餐小酌` ? `active` : ``"
+            @click="changeStyle(`晚餐小酌`)"
+          >
+            晚餐小酌
+          </div>
+          <div
+            class="pill"
+            :class="styleSelected == `日式居酒屋` ? `active` : ``"
+            @click="changeStyle(`日式居酒屋`)"
+          >
+            日式居酒屋
+          </div>
+          <div
+            class="pill"
+            :class="styleSelected == `特色店家` ? `active` : ``"
+            @click="changeStyle(`特色店家`)"
+          >
+            特色店家
+          </div>
         </div>
       </div>
 
       <div class="col-12">
         <div class="row">
-          <div class="col-6 barColDiscovery">
-            <div class="octagonBar">
-              <div class="title">標題標題標題標題</div>
-              <div class="bar_img">
-                <img src="/assets/img/bar_image_example.png" alt="1" />
+          <div
+            class="col-6 barColDiscovery"
+            v-for="(shop, shopIndex) in shopData"
+            :key="shopIndex"
+          >
+            <router-link :to="'/detail/' + shop.id">
+              <div class="octagonBar">
+                <div class="title">{{ shop.subtitle }}</div>
+                <div class="bar_img">
+                  <img src="/assets/img/bar_image_example.png" alt="1" />
+                </div>
+                <div class="bar_title">
+                  <h5>{{ shop.store_name }}</h5>
+                </div>
+                <div class="bar_address">
+                  <p>📍{{ shop.store_address }}</p>
+                </div>
               </div>
-              <div class="bar_title">
-                <h5>Potions Magic Bar</h5>
-              </div>
-              <div class="bar_address">
-                <p>📍台北市大安區四段378巷5號1樓</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 barColDiscovery">
-            <div class="octagonBar">
-              <div class="title">標題標題標題標題</div>
-              <div class="bar_img">
-                <img src="/assets/img/bar_image_example.png" alt="1" />
-              </div>
-              <div class="bar_title">
-                <h5>Potions Magic Bar</h5>
-              </div>
-              <div class="bar_address">
-                <p>📍台北市大安區四段378巷5號1樓</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 barColDiscovery">
-            <div class="octagonBar">
-              <div class="title">標題標題標題標題</div>
-              <div class="bar_img">
-                <img src="/assets/img/bar_image_example.png" alt="1" />
-              </div>
-              <div class="bar_title">
-                <h5>Potions Magic Bar</h5>
-              </div>
-              <div class="bar_address">
-                <p>📍台北市大安區四段378巷5號1樓</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 barColDiscovery">
-            <div class="octagonBar">
-              <div class="title">標題標題標題標題</div>
-              <div class="bar_img">
-                <img src="/assets/img/bar_image_example.png" alt="1" />
-              </div>
-              <div class="bar_title">
-                <h5>Potions Magic Bar</h5>
-              </div>
-              <div class="bar_address">
-                <p>📍台北市大安區四段378巷5號1樓</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 barColDiscovery">
-            <div class="octagonBar">
-              <div class="title">標題標題標題標題</div>
-              <div class="bar_img">
-                <img src="/assets/img/bar_image_example.png" alt="1" />
-              </div>
-              <div class="bar_title">
-                <h5>Potions Magic Bar</h5>
-              </div>
-              <div class="bar_address">
-                <p>📍台北市大安區四段378巷5號1樓</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 barColDiscovery">
-            <div class="octagonBar">
-              <div class="title">標題標題標題標題</div>
-              <div class="bar_img">
-                <img src="/assets/img/bar_image_example.png" alt="1" />
-              </div>
-              <div class="bar_title">
-                <h5>Potions Magic Bar</h5>
-              </div>
-              <div class="bar_address">
-                <p>📍台北市大安區四段378巷5號1樓</p>
-              </div>
-            </div>
+            </router-link>
           </div>
         </div>
       </div>
