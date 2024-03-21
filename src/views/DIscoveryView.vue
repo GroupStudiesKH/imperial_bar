@@ -28,7 +28,12 @@ export default {
 <template>
   <Header />
   <main>
-    <div id="banner_carousel" class="carousel slide">
+    <div
+      id="banner_carousel"
+      class="carousel slide"
+      data-bs-ride="true"
+      data-bs-touch="true"
+    >
       <div class="carousel-indicators">
         <button
           type="button"
@@ -62,24 +67,6 @@ export default {
           <img src="/assets/img/banner.png" class="d-block w-100" alt="..." />
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#banner_carousel"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#banner_carousel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
     <div class="container" id="bars">
       <div class="row">
