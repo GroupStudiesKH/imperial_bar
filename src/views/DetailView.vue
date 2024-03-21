@@ -14,12 +14,32 @@ export default {
   setup() {
     const router = useRouter();
     const { t, locale } = useI18n();
+    const shopData = ref([]);
+    const route = useRoute();
+    const shopID = route.params.id;
 
-    onMounted(async () => {});
+    const loadShopData = async () => {
+      try {
+        const response = await fetch('/data/bar.json'); // 載入 JSON 檔案
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          let data = await response.json(); // 將 JSON 資料轉換為陣列
+          shopData.value = data.find((item) => item.id == shopID);
+        } catch (error) {
+          console.error('There was a problem with the fetch operation:', error);
+        }
+    }
+    
+ 
+    onMounted(() => {
+      loadShopData();
+    });
 
     return {
       t,
       locale,
+      shopData
     };
   },
 };
@@ -36,7 +56,7 @@ export default {
         </div>
         <div class="col-12 px-5 BarDetailName">
           <div>
-            <h4>標題標題標題標題標題標題</h4>
+            <h4>{{ shopData.store_name }}</h4>
             <img src="/assets/img/bar_detail_example.png" />
           </div>
         </div>
@@ -46,30 +66,26 @@ export default {
             <div class="annotation">
               <img src="/assets/img/annotation.png" />
             </div>
-            台中市西區向上路一段56號1樓
+            {{ shopData.store_address }}
           </div>
         </div>
 
         <div class="col-12 px-5 BarDetailTag">
-          <div class="pill active">派對聚餐</div>
-          <div class="pill">深夜酒吧</div>
-          <div class="pill">晚餐小酌</div>
-          <div class="pill">日式居酒屋</div>
-          <div class="pill">特色店家</div>
+          <div class="pill active">{{ shopData.class }}</div>
           <hr />
         </div>
 
         <div class="col-12 px-5 BarDetailContent">
           <p>
-            介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文介紹內文內文介紹內文介紹內文介紹內文介紹內文介紹內文
+            {{ shopData.description }}
           </p>
           <hr />
         </div>
 
         <div class="col-12 px-5 BarDetailSocial">
-          <a><img src="/assets/img/share_fb.png" /></a>
-          <a><img src="/assets/img/share_ig.png" /></a>
-          <a><img src="/assets/img/share_googlemap.png" /></a>
+          <a v-if="shopData.store_fb.length > 0" :href="shopData.store_fb" target="_blank"><img src="/assets/img/share_fb.png" /></a>
+          <a v-if="shopData.store_ig.length > 0" :href="shopData.store_ig" target="_blank"><img src="/assets/img/share_ig.png" /></a>
+          <a :href="`https://www.google.com.tw/maps/place/${shopData.store_address}`" target="_blank"><img src="/assets/img/share_googlemap.png" /></a>
         </div>
 
         <div class="col-12 px-5 BarDetailAction">
