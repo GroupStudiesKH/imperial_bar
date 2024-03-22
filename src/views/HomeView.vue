@@ -17,9 +17,27 @@ export default {
     const northShopData = ref([]);
     const midShopData = ref([]);
     const southShopData = ref([]);
-    const northShopHighlight = ref([1, 3, 5, 7, 9, 12, 15, 18, 21, 24]);
-    const midShopHighlight = ref([51, 53, 55, 57, 59, 62, 65, 68, 71, 70]);
-    const southShopHighlight = ref([81, 83, 85, 87, 89, 92, 95, 98, 101, 100]);
+    const northShopHighlight = ref([
+      [1, 3],
+      [5, 7],
+      [9, 12],
+      [15, 18],
+      [21, 24],
+    ]);
+    const midShopHighlight = ref([
+      [51, 53],
+      [55, 57],
+      [59, 62],
+      [65, 68],
+      [72, 70],
+    ]);
+    const southShopHighlight = ref([
+      [81, 83],
+      [85, 87],
+      [89, 92],
+      [95, 96],
+      [93, 91],
+    ]);
     const route = useRoute();
 
     const loadShopData = async () => {
@@ -30,10 +48,29 @@ export default {
         }
         let data = await response.json(); // 將 JSON 資料轉換為陣列
 
-        northShopData.value = data.filter((item) => item.location == "北部" && northShopHighlight.value.includes(item.id));
-        midShopData.value = data.filter((item) => item.location == "中部" && midShopHighlight.value.includes(item.id));
-        southShopData.value = data.filter((item) => item.location == "南部" && southShopHighlight.value.includes(item.id));
+        northShopHighlight.value.forEach((shopGroup) => {
+          let shopGroupData = [];
+          shopGroup.forEach((shopId) => {
+            shopGroupData.push(data.find((item) => item.id == shopId));
+          });
+          northShopData.value.push(shopGroupData);
+        });
 
+        midShopHighlight.value.forEach((shopGroup) => {
+          let shopGroupData = [];
+          shopGroup.forEach((shopId) => {
+            shopGroupData.push(data.find((item) => item.id == shopId));
+          });
+          midShopData.value.push(shopGroupData);
+        });
+
+        southShopHighlight.value.forEach((shopGroup) => {
+          let shopGroupData = [];
+          shopGroup.forEach((shopId) => {
+            shopGroupData.push(data.find((item) => item.id == shopId));
+          });
+          southShopData.value.push(shopGroupData);
+        });
       } catch (error) {
         console.error("There was a problem with the fetch operation:", error);
       }
@@ -46,7 +83,6 @@ export default {
     return {
       t,
       locale,
-      shopData,
       northShopData,
       midShopData,
       southShopData,
@@ -72,94 +108,31 @@ export default {
         </div>
         <div id="carouselNorth" class="carousel slide">
           <div class="carousel-inner barContainer">
-            <div class="barRow carousel-item active">
-              <div class="barCol">
-                <div class="octagonBar">
-                  <div class="title">標題標題標題標題</div>
-                  <div class="bar_img">
-                    <img src="/assets/img/bar_image_example.png" alt="1" />
+            <div
+              class="barRow carousel-item"
+              :class="shopsIndex == 0 ? `active` : ``"
+              v-for="(shops, shopsIndex) in northShopData"
+              :key="shopsIndex"
+            >
+              <div
+                class="barCol"
+                v-for="(shop, shopIndex) in shops"
+                :key="shopIndex"
+              >
+                <router-link :to="'/detail/' + shop.id">
+                  <div class="octagonBar">
+                    <div class="title">{{ shop.subtitle }}</div>
+                    <div class="bar_img">
+                      <img src="/assets/img/bar_image_example.png" alt="1" />
+                    </div>
+                    <div class="bar_title">
+                      <h5>{{ shop.store_name }}</h5>
+                    </div>
+                    <div class="bar_address">
+                      <p>📍{{ shop.store_address }}</p>
+                    </div>
                   </div>
-                  <div class="bar_title">
-                    <h5>Pun1</h5>
-                  </div>
-                  <div class="bar_address">
-                    <p>📍台北市大安區四段378巷5號1樓</p>
-                  </div>
-                </div>
-              </div>
-              <div class="barCol">
-                <div class="octagonBar">
-                  <div class="title">標題標題標題標題</div>
-                  <div class="bar_img">
-                    <img src="/assets/img/bar_image_example.png" alt="1" />
-                  </div>
-                  <div class="bar_title">
-                    <h5>Pun2</h5>
-                  </div>
-                  <div class="bar_address">
-                    <p>📍台北市大安區四段378巷5號1樓</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="barRow carousel-item">
-              <div class="barCol">
-                <div class="octagonBar">
-                  <div class="title">標題標題標題標題</div>
-                  <div class="bar_img">
-                    <img src="/assets/img/bar_image_example.png" alt="1" />
-                  </div>
-                  <div class="bar_title">
-                    <h5>Pun</h5>
-                  </div>
-                  <div class="bar_address">
-                    <p>📍台北市大安區四段378巷5號1樓</p>
-                  </div>
-                </div>
-              </div>
-              <div class="barCol">
-                <div class="octagonBar">
-                  <div class="title">標題標題標題標題</div>
-                  <div class="bar_img">
-                    <img src="/assets/img/bar_image_example.png" alt="1" />
-                  </div>
-                  <div class="bar_title">
-                    <h5>Pun</h5>
-                  </div>
-                  <div class="bar_address">
-                    <p>📍台北市大安區四段378巷5號1樓</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="barRow carousel-item">
-              <div class="barCol">
-                <div class="octagonBar">
-                  <div class="title">標題標題標題標題</div>
-                  <div class="bar_img">
-                    <img src="/assets/img/bar_image_example.png" alt="1" />
-                  </div>
-                  <div class="bar_title">
-                    <h5>Pun</h5>
-                  </div>
-                  <div class="bar_address">
-                    <p>📍台北市大安區四段378巷5號1樓</p>
-                  </div>
-                </div>
-              </div>
-              <div class="barCol">
-                <div class="octagonBar">
-                  <div class="title">標題標題標題標題</div>
-                  <div class="bar_img">
-                    <img src="/assets/img/bar_image_example.png" alt="1" />
-                  </div>
-                  <div class="bar_title">
-                    <h5>Pun</h5>
-                  </div>
-                  <div class="bar_address">
-                    <p>📍台北市大安區四段378巷5號1樓</p>
-                  </div>
-                </div>
+                </router-link>
               </div>
             </div>
           </div>
@@ -186,94 +159,31 @@ export default {
         </div>
         <div id="carouselMid" class="carousel slide">
           <div class="carousel-inner barContainer">
-            <div class="barRow carousel-item active">
-              <div class="barCol">
-                <div class="octagonBar">
-                  <div class="title">標題標題標題標題</div>
-                  <div class="bar_img">
-                    <img src="/assets/img/bar_image_example.png" alt="1" />
+            <div
+              class="barRow carousel-item"
+              :class="shopsIndex == 0 ? `active` : ``"
+              v-for="(shops, shopsIndex) in midShopData"
+              :key="shopsIndex"
+            >
+              <div
+                class="barCol"
+                v-for="(shop, shopIndex) in shops"
+                :key="shopIndex"
+              >
+                <router-link :to="'/detail/' + shop.id">
+                  <div class="octagonBar">
+                    <div class="title">{{ shop.subtitle }}</div>
+                    <div class="bar_img">
+                      <img src="/assets/img/bar_image_example.png" alt="1" />
+                    </div>
+                    <div class="bar_title">
+                      <h5>{{ shop.store_name }}</h5>
+                    </div>
+                    <div class="bar_address">
+                      <p>📍{{ shop.store_address }}</p>
+                    </div>
                   </div>
-                  <div class="bar_title">
-                    <h5>Pun1</h5>
-                  </div>
-                  <div class="bar_address">
-                    <p>📍台北市大安區四段378巷5號1樓</p>
-                  </div>
-                </div>
-              </div>
-              <div class="barCol">
-                <div class="octagonBar">
-                  <div class="title">標題標題標題標題</div>
-                  <div class="bar_img">
-                    <img src="/assets/img/bar_image_example.png" alt="1" />
-                  </div>
-                  <div class="bar_title">
-                    <h5>Pun2</h5>
-                  </div>
-                  <div class="bar_address">
-                    <p>📍台北市大安區四段378巷5號1樓</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="barRow carousel-item">
-              <div class="barCol">
-                <div class="octagonBar">
-                  <div class="title">標題標題標題標題</div>
-                  <div class="bar_img">
-                    <img src="/assets/img/bar_image_example.png" alt="1" />
-                  </div>
-                  <div class="bar_title">
-                    <h5>Pun</h5>
-                  </div>
-                  <div class="bar_address">
-                    <p>📍台北市大安區四段378巷5號1樓</p>
-                  </div>
-                </div>
-              </div>
-              <div class="barCol">
-                <div class="octagonBar">
-                  <div class="title">標題標題標題標題</div>
-                  <div class="bar_img">
-                    <img src="/assets/img/bar_image_example.png" alt="1" />
-                  </div>
-                  <div class="bar_title">
-                    <h5>Pun</h5>
-                  </div>
-                  <div class="bar_address">
-                    <p>📍台北市大安區四段378巷5號1樓</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="barRow carousel-item">
-              <div class="barCol">
-                <div class="octagonBar">
-                  <div class="title">標題標題標題標題</div>
-                  <div class="bar_img">
-                    <img src="/assets/img/bar_image_example.png" alt="1" />
-                  </div>
-                  <div class="bar_title">
-                    <h5>Pun</h5>
-                  </div>
-                  <div class="bar_address">
-                    <p>📍台北市大安區四段378巷5號1樓</p>
-                  </div>
-                </div>
-              </div>
-              <div class="barCol">
-                <div class="octagonBar">
-                  <div class="title">標題標題標題標題</div>
-                  <div class="bar_img">
-                    <img src="/assets/img/bar_image_example.png" alt="1" />
-                  </div>
-                  <div class="bar_title">
-                    <h5>Pun</h5>
-                  </div>
-                  <div class="bar_address">
-                    <p>📍台北市大安區四段378巷5號1樓</p>
-                  </div>
-                </div>
+                </router-link>
               </div>
             </div>
           </div>
@@ -300,94 +210,31 @@ export default {
         </div>
         <div id="carouselSouth" class="carousel slide">
           <div class="carousel-inner barContainer">
-            <div class="barRow carousel-item active">
-              <div class="barCol">
-                <div class="octagonBar">
-                  <div class="title">標題標題標題標題</div>
-                  <div class="bar_img">
-                    <img src="/assets/img/bar_image_example.png" alt="1" />
+            <div
+              class="barRow carousel-item"
+              :class="shopsIndex == 0 ? `active` : ``"
+              v-for="(shops, shopsIndex) in southShopData"
+              :key="shopsIndex"
+            >
+              <div
+                class="barCol"
+                v-for="(shop, shopIndex) in shops"
+                :key="shopIndex"
+              >
+                <router-link :to="'/detail/' + shop.id">
+                  <div class="octagonBar">
+                    <div class="title">{{ shop.subtitle }}</div>
+                    <div class="bar_img">
+                      <img src="/assets/img/bar_image_example.png" alt="1" />
+                    </div>
+                    <div class="bar_title">
+                      <h5>{{ shop.store_name }}</h5>
+                    </div>
+                    <div class="bar_address">
+                      <p>📍{{ shop.store_address }}</p>
+                    </div>
                   </div>
-                  <div class="bar_title">
-                    <h5>Pun1</h5>
-                  </div>
-                  <div class="bar_address">
-                    <p>📍台北市大安區四段378巷5號1樓</p>
-                  </div>
-                </div>
-              </div>
-              <div class="barCol">
-                <div class="octagonBar">
-                  <div class="title">標題標題標題標題</div>
-                  <div class="bar_img">
-                    <img src="/assets/img/bar_image_example.png" alt="1" />
-                  </div>
-                  <div class="bar_title">
-                    <h5>Pun2</h5>
-                  </div>
-                  <div class="bar_address">
-                    <p>📍台北市大安區四段378巷5號1樓</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="barRow carousel-item">
-              <div class="barCol">
-                <div class="octagonBar">
-                  <div class="title">標題標題標題標題</div>
-                  <div class="bar_img">
-                    <img src="/assets/img/bar_image_example.png" alt="1" />
-                  </div>
-                  <div class="bar_title">
-                    <h5>Pun</h5>
-                  </div>
-                  <div class="bar_address">
-                    <p>📍台北市大安區四段378巷5號1樓</p>
-                  </div>
-                </div>
-              </div>
-              <div class="barCol">
-                <div class="octagonBar">
-                  <div class="title">標題標題標題標題</div>
-                  <div class="bar_img">
-                    <img src="/assets/img/bar_image_example.png" alt="1" />
-                  </div>
-                  <div class="bar_title">
-                    <h5>Pun</h5>
-                  </div>
-                  <div class="bar_address">
-                    <p>📍台北市大安區四段378巷5號1樓</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="barRow carousel-item">
-              <div class="barCol">
-                <div class="octagonBar">
-                  <div class="title">標題標題標題標題</div>
-                  <div class="bar_img">
-                    <img src="/assets/img/bar_image_example.png" alt="1" />
-                  </div>
-                  <div class="bar_title">
-                    <h5>Pun</h5>
-                  </div>
-                  <div class="bar_address">
-                    <p>📍台北市大安區四段378巷5號1樓</p>
-                  </div>
-                </div>
-              </div>
-              <div class="barCol">
-                <div class="octagonBar">
-                  <div class="title">標題標題標題標題</div>
-                  <div class="bar_img">
-                    <img src="/assets/img/bar_image_example.png" alt="1" />
-                  </div>
-                  <div class="bar_title">
-                    <h5>Pun</h5>
-                  </div>
-                  <div class="bar_address">
-                    <p>📍台北市大安區四段378巷5號1樓</p>
-                  </div>
-                </div>
+                </router-link>
               </div>
             </div>
           </div>
@@ -410,7 +257,6 @@ export default {
         </div>
       </div>
 
-      
       <div id="page_bottom">
         <img src="/assets/img/previous.png" />
       </div>

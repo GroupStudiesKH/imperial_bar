@@ -302,7 +302,7 @@ main {
             .barRow {
                 flex: 0 0 auto;
                 width: 290px;
-                height: 220px;
+                height: 230px;
                 margin: 0 auto;
 
                 div.barCol {
@@ -311,16 +311,15 @@ main {
                     margin-right: 10px;
 
                     .octagonBar {
-                        height: 194px;
+                        height: 210px;
                         width: 135px;
                         margin-top: 10px;
                         margin-bottom: 10px;
                         background-color: #fff;
-                        clip-path: polygon(8% 0%, 92% 0%, 100% 6%, 100% 92%, 92% 100%, 8% 100%, 0% 92%, 0% 6%);
+                        clip-path: polygon(8% 0%, 92% 0%, 100% 6%, 100% 95%, 92% 100%, 8% 100%, 0% 95%, 0% 6%);
 
 
                         .title {
-                            top: 0;
                             background-color: #9D086B;
                             height: 15%;
                             width: 100%;
@@ -328,6 +327,9 @@ main {
                             line-height: 27px;
                             text-align: center;
                             color: #fff;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
                         }
 
                         .bar_img {
@@ -343,8 +345,10 @@ main {
                         .bar_title {
                             margin-top: 5px;
                             margin-bottom: 0;
-                            padding: 0 10px;
-
+                            padding: 2px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
                             h5 {
                                 font-size: 15px;
                                 margin: 0;
@@ -353,7 +357,7 @@ main {
 
                         .bar_address {
                             margin: 5px 0;
-                            padding: 0 10px;
+                            padding: 2px;
 
                             p {
                                 font-size: 12px;
