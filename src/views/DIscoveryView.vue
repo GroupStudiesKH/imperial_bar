@@ -200,9 +200,10 @@ export default {
             <router-link :to="'/detail/' + shop.id">
               <div class="octagonBar">
                 <div class="title">{{ shop.subtitle }}</div>
-                <div class="bar_img">
-                  <img src="/assets/img/bar_image_example.png" alt="1" />
-                </div>
+                <div
+                  class="bar_img"
+                  :style="`background-image: url('/assets/img/shop/${shop.id}-1.jpg')`"
+                ></div>
                 <div class="bar_title">
                   <h5>{{ shop.store_name }}</h5>
                 </div>

@@ -70,7 +70,7 @@ export default {
         <div class="col-12 px-5 BarDetailName">
           <div>
             <h4>{{ shopData.subtitle }}</h4>
-            <img src="/assets/img/bar_detail_example.png" />
+            <div class="img" :style="`background-image: url('/assets/img/shop/${shopData.id}-1.jpg')`"></div>
           </div>
         </div>
 
