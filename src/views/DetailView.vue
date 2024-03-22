@@ -102,8 +102,8 @@ export default {
         </div>
 
         <div class="col-12 px-5 BarDetailAction">
-          <a class="previous" @click="toPrevious()"><img src="/assets/img/previous_member.png" /></a>
           <a class="getTicket"><img src="/assets/img/get_ticket.png" /></a>
+          <a class="previous" @click="toPrevious()"><img src="/assets/img/previous_member.png" /></a>
         </div>
       </div>
 
