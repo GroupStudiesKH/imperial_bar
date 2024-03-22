@@ -69,7 +69,7 @@ export default {
 </script>
 
 <template>
-  <Header />
+  <Header title="合作店家" />
   <main>
     <div
       id="banner_carousel"

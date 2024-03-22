@@ -2,21 +2,24 @@
   <header>
     <div class="container">
       <img src="/assets/img/logo.png" class="logo" alt="logo" />
-      <span>本月活動</span>
+      <span>{{ title }}</span>
     </div>
   </header>
 </template>
 
 <script>
 import { useI18n } from "vue-i18n";
-import { onMounted, ref } from "vue";
-import apiService from "@/service/api-service";
-import Bootstrap from "bootstrap/dist/js/bootstrap.bundle";
-import cartService from "@/service/cart-service.js";
+import { onMounted, ref, defineProps } from "vue";
 
 export default {
   name: "Header",
-  setup() {
+  props: {
+    title: {
+      type: String,
+      default: "本月活動",
+    }
+  },
+  setup(props) {
     const { t, locale } = useI18n();
     const categories = ref([]);
     const cartCount = ref(0);
@@ -41,9 +44,6 @@ export default {
     };
 
 
-    onMounted(() => {
-
-    });
 
     return {
       t,
@@ -54,7 +54,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-/* Add any custom styles here */
-</style>
