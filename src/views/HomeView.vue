@@ -53,7 +53,7 @@ export default {
       //scroll 290px
       const carousel = document.getElementById(carouselId);
       const scrollAmount = 275;
-      const scrollDuration = 300; // Adjust the duration as needed
+      const scrollDuration = 275; // Adjust the duration as needed
 
       switch (carouselId) {
         case `northShop`:
@@ -101,7 +101,7 @@ export default {
       //scroll 290px
       const carousel = document.getElementById(carouselId);
       const scrollAmount = 275;
-      const scrollDuration = 300; // Adjust the duration as needed
+      const scrollDuration = 275; // Adjust the duration as needed
       switch (carouselId) {
         case `northShop`:
           northPage.value--;
