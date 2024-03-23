@@ -19,20 +19,10 @@ export default {
     const southShopData = ref([]);
     const northShopHighlight = ref([2, 3, 8, 7, 10, 12, 15, 18, 21, 24]);
     const northPage = ref(1);
-    const midShopHighlight = ref([
-      [51, 53],
-      [55, 57],
-      [59, 62],
-      [65, 68],
-      [72, 70],
-    ]);
-    const southShopHighlight = ref([
-      [81, 83],
-      [85, 87],
-      [89, 92],
-      [95, 96],
-      [93, 91],
-    ]);
+    const midShopHighlight = ref([51, 53, 55, 57, 59, 62, 65, 68, 72, 70]);
+    const midPage = ref(1);
+    const southShopHighlight = ref([81, 83, 85, 87, 89, 92, 95, 96, 93, 91]);
+    const southPage = ref(1);
     const route = useRoute();
 
     const loadShopData = async () => {
@@ -48,19 +38,11 @@ export default {
         });
 
         midShopHighlight.value.forEach((shopGroup) => {
-          let shopGroupData = [];
-          shopGroup.forEach((shopId) => {
-            shopGroupData.push(data.find((item) => item.id == shopId));
-          });
-          midShopData.value.push(shopGroupData);
+          midShopData.value.push(data.find((item) => item.id == shopGroup));
         });
 
         southShopHighlight.value.forEach((shopGroup) => {
-          let shopGroupData = [];
-          shopGroup.forEach((shopId) => {
-            shopGroupData.push(data.find((item) => item.id == shopId));
-          });
-          southShopData.value.push(shopGroupData);
+          southShopData.value.push(data.find((item) => item.id == shopGroup));
         });
       } catch (error) {
         console.error("There was a problem with the fetch operation:", error);
@@ -72,13 +54,20 @@ export default {
       const carousel = document.getElementById(carouselId);
       const scrollAmount = 275;
       const scrollDuration = 300; // Adjust the duration as needed
-      
 
       switch (carouselId) {
         case `northShop`:
           northPage.value++;
           break;
-      
+
+        case `midShop`:
+          midPage.value++;
+          break;
+
+        case `southShop`:
+          southPage.value++;
+          break;
+
         default:
           break;
       }
@@ -118,6 +107,14 @@ export default {
           northPage.value--;
           break;
       
+        case `midShop`:
+          midPage.value--;
+          break;
+
+        case `southShop`:
+          southPage.value--;
+          break;
+
         default:
           break;
       }
@@ -162,7 +159,9 @@ export default {
       southShopHighlight,
       scrollToNextSlide,
       scrollToPrevSlide,
-      northPage
+      northPage,
+      midPage,
+      southPage,
     };
   },
 };
@@ -207,12 +206,17 @@ export default {
             </div>
           </div>
           <button class="carousel-control-prev">
-            <img src="/assets/img/carousel_prev.png" @click="scrollToPrevSlide(`northShop`)"             v-if="northPage > 1"
- />
+            <img
+              src="/assets/img/carousel_prev.png"
+              @click="scrollToPrevSlide(`northShop`)"
+              v-if="northPage > 1"
+            />
           </button>
-          <button class="carousel-control-next" @click="scrollToNextSlide(`northShop`)">
-            <img src="/assets/img/carousel_next.png"             v-if="northPage < 5"
- />
+          <button
+            class="carousel-control-next"
+            @click="scrollToNextSlide(`northShop`)"
+          >
+            <img src="/assets/img/carousel_next.png" v-if="northPage < 5" />
           </button>
         </div>
 
@@ -220,16 +224,11 @@ export default {
           <h5>中部店家</h5>
         </div>
         <div id="carouselMid" class="carousel slide">
-          <div class="carousel-inner barContainer">
-            <div
-              class="barRow carousel-item"
-              :class="shopsIndex == 0 ? `active` : ``"
-              v-for="(shops, shopsIndex) in midShopData"
-              :key="shopsIndex"
-            >
+          <div class="barContainer">
+            <div class="barRow" id="midShop">
               <div
                 class="barCol"
-                v-for="(shop, shopIndex) in shops"
+                v-for="(shop, shopIndex) in midShopData"
                 :key="shopIndex"
               >
                 <router-link :to="'/detail/' + shop.id">
@@ -250,21 +249,18 @@ export default {
               </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselMid"
-            data-bs-slide="prev"
-          >
-            <img src="/assets/img/carousel_prev.png" />
+          <button class="carousel-control-prev">
+            <img
+              src="/assets/img/carousel_prev.png"
+              @click="scrollToPrevSlide(`midShop`)"
+              v-if="midPage > 1"
+            />
           </button>
           <button
             class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselMid"
-            data-bs-slide="next"
+            @click="scrollToNextSlide(`midShop`)"
           >
-            <img src="/assets/img/carousel_next.png" />
+            <img src="/assets/img/carousel_next.png" v-if="midPage < 5" />
           </button>
         </div>
 
@@ -272,16 +268,11 @@ export default {
           <h5>南部店家</h5>
         </div>
         <div id="carouselSouth" class="carousel slide">
-          <div class="carousel-inner barContainer">
-            <div
-              class="barRow carousel-item"
-              :class="shopsIndex == 0 ? `active` : ``"
-              v-for="(shops, shopsIndex) in southShopData"
-              :key="shopsIndex"
-            >
+          <div class="barContainer">
+            <div class="barRow" id="southShop">
               <div
                 class="barCol"
-                v-for="(shop, shopIndex) in shops"
+                v-for="(shop, shopIndex) in northShopData"
                 :key="shopIndex"
               >
                 <router-link :to="'/detail/' + shop.id">
@@ -302,21 +293,18 @@ export default {
               </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselSouth"
-            data-bs-slide="prev"
-          >
-            <img src="/assets/img/carousel_prev.png" />
+          <button class="carousel-control-prev">
+            <img
+              src="/assets/img/carousel_prev.png"
+              @click="scrollToPrevSlide(`southShop`)"
+              v-if="southPage > 1"
+            />
           </button>
           <button
             class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselSouth"
-            data-bs-slide="next"
+            @click="scrollToNextSlide(`southShop`)"
           >
-            <img src="/assets/img/carousel_next.png" />
+            <img src="/assets/img/carousel_next.png" v-if="southPage < 5" />
           </button>
         </div>
       </div>
