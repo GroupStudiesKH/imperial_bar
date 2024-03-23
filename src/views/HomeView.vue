@@ -17,13 +17,8 @@ export default {
     const northShopData = ref([]);
     const midShopData = ref([]);
     const southShopData = ref([]);
-    const northShopHighlight = ref([
-      [2, 3],
-      [8, 7],
-      [10, 12],
-      [15, 18],
-      [21, 24],
-    ]);
+    const northShopHighlight = ref([2, 3, 8, 7, 10, 12, 15, 18, 21, 24]);
+    const northPage = ref(1);
     const midShopHighlight = ref([
       [51, 53],
       [55, 57],
@@ -49,11 +44,7 @@ export default {
         let data = await response.json(); // 將 JSON 資料轉換為陣列
 
         northShopHighlight.value.forEach((shopGroup) => {
-          let shopGroupData = [];
-          shopGroup.forEach((shopId) => {
-            shopGroupData.push(data.find((item) => item.id == shopId));
-          });
-          northShopData.value.push(shopGroupData);
+          northShopData.value.push(data.find((item) => item.id == shopGroup));
         });
 
         midShopHighlight.value.forEach((shopGroup) => {
@@ -76,6 +67,86 @@ export default {
       }
     };
 
+    const scrollToNextSlide = (carouselId) => {
+      //scroll 290px
+      const carousel = document.getElementById(carouselId);
+      const scrollAmount = 275;
+      const scrollDuration = 300; // Adjust the duration as needed
+      
+
+      switch (carouselId) {
+        case `northShop`:
+          northPage.value++;
+          break;
+      
+        default:
+          break;
+      }
+
+      const scrollStep = (timestamp) => {
+        if (!startTime) {
+          startTime = timestamp;
+        }
+
+        const elapsed = timestamp - startTime;
+        const progress = Math.min(elapsed / scrollDuration, 1);
+        const scrollDistance = scrollAmount * progress;
+
+        carousel.scrollTo({
+          left: carousel.scrollLeft + scrollDistance,
+          behavior: "smooth",
+        });
+
+        if (progress < 1) {
+          requestAnimationFrame(scrollStep);
+        } else {
+          startTime = null;
+        }
+      };
+
+      let startTime = null;
+      requestAnimationFrame(scrollStep);
+    };
+
+    const scrollToPrevSlide = (carouselId) => {
+      //scroll 290px
+      const carousel = document.getElementById(carouselId);
+      const scrollAmount = 275;
+      const scrollDuration = 300; // Adjust the duration as needed
+      switch (carouselId) {
+        case `northShop`:
+          northPage.value--;
+          break;
+      
+        default:
+          break;
+      }
+
+      const scrollStep = (timestamp) => {
+        if (!startTime) {
+          startTime = timestamp;
+        }
+
+        const elapsed = timestamp - startTime;
+        const progress = Math.min(elapsed / scrollDuration, 1);
+        const scrollDistance = scrollAmount * progress;
+
+        carousel.scrollTo({
+          left: carousel.scrollLeft - scrollDistance,
+          behavior: "smooth",
+        });
+
+        if (progress < 1) {
+          requestAnimationFrame(scrollStep);
+        } else {
+          startTime = null;
+        }
+      };
+
+      let startTime = null;
+      requestAnimationFrame(scrollStep);
+    };
+
     onMounted(() => {
       loadShopData();
     });
@@ -89,6 +160,9 @@ export default {
       northShopHighlight,
       midShopHighlight,
       southShopHighlight,
+      scrollToNextSlide,
+      scrollToPrevSlide,
+      northPage
     };
   },
 };
@@ -106,24 +180,21 @@ export default {
         <div class="col-12 px-5 areaHeading">
           <h5>北部店家</h5>
         </div>
-        <div id="carouselNorth" class="carousel slide">
-          <div class="carousel-inner barContainer">
-            <div
-              class="barRow carousel-item"
-              :class="shopsIndex == 0 ? `active` : ``"
-              v-for="(shops, shopsIndex) in northShopData"
-              :key="shopsIndex"
-            >
+        <div id="carouselNorth">
+          <div class="barContainer">
+            <div class="barRow" id="northShop">
               <div
                 class="barCol"
-                v-for="(shop, shopIndex) in shops"
+                v-for="(shop, shopIndex) in northShopData"
                 :key="shopIndex"
               >
                 <router-link :to="'/detail/' + shop.id">
                   <div class="octagonBar">
                     <div class="title">{{ shop.subtitle }}</div>
-                    <div class="bar_img" :style="`background-image: url('/assets/img/shop/${shop.id}-1.jpg')`">
-                    </div>
+                    <div
+                      class="bar_img"
+                      :style="`background-image: url('/assets/img/shop/${shop.id}-1.jpg')`"
+                    ></div>
                     <div class="bar_title">
                       <h5>{{ shop.store_name }}</h5>
                     </div>
@@ -135,21 +206,13 @@ export default {
               </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselNorth"
-            data-bs-slide="prev"
-          >
-            <img src="/assets/img/carousel_prev.png" />
+          <button class="carousel-control-prev">
+            <img src="/assets/img/carousel_prev.png" @click="scrollToPrevSlide(`northShop`)"             v-if="northPage > 1"
+ />
           </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselNorth"
-            data-bs-slide="next"
-          >
-            <img src="/assets/img/carousel_next.png" />
+          <button class="carousel-control-next" @click="scrollToNextSlide(`northShop`)">
+            <img src="/assets/img/carousel_next.png"             v-if="northPage < 5"
+ />
           </button>
         </div>
 
@@ -172,8 +235,10 @@ export default {
                 <router-link :to="'/detail/' + shop.id">
                   <div class="octagonBar">
                     <div class="title">{{ shop.subtitle }}</div>
-                    <div class="bar_img" :style="`background-image: url('/assets/img/shop/${shop.id}-1.jpg')`">
-                    </div>
+                    <div
+                      class="bar_img"
+                      :style="`background-image: url('/assets/img/shop/${shop.id}-1.jpg')`"
+                    ></div>
                     <div class="bar_title">
                       <h5>{{ shop.store_name }}</h5>
                     </div>
@@ -222,8 +287,10 @@ export default {
                 <router-link :to="'/detail/' + shop.id">
                   <div class="octagonBar">
                     <div class="title">{{ shop.subtitle }}</div>
-                    <div class="bar_img" :style="`background-image: url('/assets/img/shop/${shop.id}-1.jpg')`">
-                    </div>
+                    <div
+                      class="bar_img"
+                      :style="`background-image: url('/assets/img/shop/${shop.id}-1.jpg')`"
+                    ></div>
                     <div class="bar_title">
                       <h5>{{ shop.store_name }}</h5>
                     </div>
