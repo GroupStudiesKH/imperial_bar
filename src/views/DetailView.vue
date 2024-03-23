@@ -85,7 +85,8 @@ export default {
         </div>
 
         <div class="col-12 px-5 BarDetailTag">
-          <div class="pill active">{{ shopData.class }}</div>
+          <div class="pill">{{ shopData.location }}</div>
+          <div class="pill">{{ shopData.class }}</div>
           <hr />
         </div>
 
