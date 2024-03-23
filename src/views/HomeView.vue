@@ -179,7 +179,7 @@ export default {
         <div class="col-12 px-5 areaHeading">
           <h5>北部店家</h5>
         </div>
-        <div id="carouselNorth">
+        <div id="carouselNorth" class="carousel slide">
           <div class="barContainer">
             <div class="barRow" id="northShop">
               <div
