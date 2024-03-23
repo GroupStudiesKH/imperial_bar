@@ -35,7 +35,6 @@ export default {
           );
         }
 
-        console.log(shopData.value);
       } catch (error) {
         console.error("There was a problem with the fetch operation:", error);
       }
@@ -136,6 +135,7 @@ export default {
         <div class="col-9">
           <div
             class="pill"
+            role="botton"
             :class="locationSelected == `北部` ? `active` : ``"
             @click="changeLocation(`北部`)"
           >
@@ -143,6 +143,7 @@ export default {
           </div>
           <div
             class="pill"
+            role="botton"
             :class="locationSelected == `中部` ? `active` : ``"
             @click="changeLocation(`中部`)"
           >
@@ -150,6 +151,7 @@ export default {
           </div>
           <div
             class="pill"
+            role="botton"
             :class="locationSelected == `南部` ? `active` : ``"
             @click="changeLocation(`南部`)"
           >
@@ -165,6 +167,7 @@ export default {
         <div class="col-9">
           <div
             class="pill"
+            role="botton"
             :class="styleSelected == `派對聚餐` ? `active` : ``"
             @click="changeStyle(`派對聚餐`)"
           >
@@ -172,6 +175,7 @@ export default {
           </div>
           <div
             class="pill"
+            role="botton"
             :class="styleSelected == `深夜酒吧` ? `active` : ``"
             @click="changeStyle(`深夜酒吧`)"
           >
@@ -179,6 +183,7 @@ export default {
           </div>
           <div
             class="pill"
+            role="botton"
             :class="styleSelected == `晚餐小酌` ? `active` : ``"
             @click="changeStyle(`晚餐小酌`)"
           >
@@ -186,6 +191,7 @@ export default {
           </div>
           <div
             class="pill"
+            role="botton"
             :class="styleSelected == `日式居酒屋` ? `active` : ``"
             @click="changeStyle(`日式居酒屋`)"
           >
@@ -193,6 +199,7 @@ export default {
           </div>
           <div
             class="pill"
+            role="botton"
             :class="styleSelected == `特色店家` ? `active` : ``"
             @click="changeStyle(`特色店家`)"
           >
