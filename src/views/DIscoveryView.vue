@@ -53,6 +53,17 @@ export default {
 
     onMounted(() => {
       loadShopData();
+
+      const carouselList = document.querySelectorAll(".carousel");
+      carouselList.forEach((carousel) => {
+        const carouselId = carousel.id;
+        const carouselInstance = new Bootstrap.Carousel(
+          document.getElementById(carouselId),
+          {
+            interval: 2000,
+          }
+        );
+      });
     });
 
     return {
