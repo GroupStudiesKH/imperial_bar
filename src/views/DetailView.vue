@@ -78,8 +78,9 @@ export default {
           <div class="address_bg">
             <div class="annotation">
               <img src="/assets/img/annotation.png" />
+              {{ shopData.store_address }}
             </div>
-            {{ shopData.store_address }}
+            <div class="address"></div>
           </div>
         </div>
 
