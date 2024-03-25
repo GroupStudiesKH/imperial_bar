@@ -18,6 +18,7 @@ export default {
       store_name: "",
       subtitle: "",
       store_address: "",
+      store_phone: "",
       class: "",
       description: "",
       store_fb: "",
@@ -104,7 +105,7 @@ export default {
         </div>
 
         <div class="col-12 px-5 BarDetailAction">
-          <a><img src="/assets/img/call_shop.png" /></a>
+          <a v-if="shopData.store_phone.length > 0" :href="`tel:${shopData.store_phone}`" target="_blank"><img src="/assets/img/call_shop.png" /></a>
           <a class="previous" @click="toPrevious()"><img src="/assets/img/previous_member.png" /></a>
         </div>
       </div>
