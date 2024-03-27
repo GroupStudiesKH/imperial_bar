@@ -108,16 +108,105 @@ export default {
           data-bs-slide-to="2"
           aria-label="Slide 3"
         ></button>
+        <button
+          type="button"
+          data-bs-target="#banner_carousel"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#banner_carousel"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#banner_carousel"
+          data-bs-slide-to="5"
+          aria-label="Slide 6"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#banner_carousel"
+          data-bs-slide-to="6"
+          aria-label="Slide 7"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#banner_carousel"
+          data-bs-slide-to="7"
+          aria-label="Slide 8"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#banner_carousel"
+          data-bs-slide-to="8"
+          aria-label="Slide 9"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#banner_carousel"
+          data-bs-slide-to="9"
+          aria-label="Slide 10"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#banner_carousel"
+          data-bs-slide-to="10"
+          aria-label="Slide 10"
+        ></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="/assets/img/banner.png" class="d-block w-100" alt="..." />
+          <router-link :to="{ name: 'discovery-detail', params: { id: 10 } }">
+            <img src="/assets/img/discovery/10.jpg" class="d-block w-100" alt="..." />
+          </router-link>
         </div>
         <div class="carousel-item">
-          <img src="/assets/img/banner.png" class="d-block w-100" alt="..." />
+          <router-link :to="{ name: 'discovery-detail', params: { id: 16 } }">
+            <img src="/assets/img/discovery/16.jpg" class="d-block w-100" alt="..." />
+          </router-link>
         </div>
         <div class="carousel-item">
-          <img src="/assets/img/banner.png" class="d-block w-100" alt="..." />
+          <router-link :to="{ name: 'discovery-detail', params: { id: 19 } }">
+            <img src="/assets/img/discovery/19.jpg" class="d-block w-100" alt="..." />
+          </router-link>
+        </div>
+        <div class="carousel-item">
+          <router-link :to="{ name: 'discovery-detail', params: { id: 40 } }">
+            <img src="/assets/img/discovery/40.jpg" class="d-block w-100" alt="..." />
+          </router-link>
+        </div>
+        <div class="carousel-item">
+          <router-link :to="{ name: 'discovery-detail', params: { id: 45 } }">
+            <img src="/assets/img/discovery/45.jpg" class="d-block w-100" alt="..." />
+          </router-link>
+        </div>
+        <div class="carousel-item">
+          <router-link :to="{ name: 'discovery-detail', params: { id: 50 } }">
+            <img src="/assets/img/discovery/50.jpg" class="d-block w-100" alt="..." />
+          </router-link>
+        </div>
+        <div class="carousel-item">
+          <router-link :to="{ name: 'discovery-detail', params: { id: 51 } }">
+            <img src="/assets/img/discovery/51.jpg" class="d-block w-100" alt="..." />
+          </router-link>
+        </div>
+        <div class="carousel-item">
+          <router-link :to="{ name: 'discovery-detail', params: { id: 76 } }">
+            <img src="/assets/img/discovery/76.jpg" class="d-block w-100" alt="..." />
+          </router-link>
+        </div>
+        <div class="carousel-item">
+          <router-link :to="{ name: 'discovery-detail', params: { id: 79 } }">
+            <img src="/assets/img/discovery/79.jpg" class="d-block w-100" alt="..." />
+          </router-link>
+        </div>
+        <div class="carousel-item">
+          <router-link :to="{ name: 'discovery-detail', params: { id: 80 } }">
+            <img src="/assets/img/discovery/80.jpg" class="d-block w-100" alt="..." />
+          </router-link>
         </div>
       </div>
     </div>

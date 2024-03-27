@@ -44,6 +44,10 @@ export default {
     const toPrevious = () => {
       router.go(-1);
     }
+
+    const goBannerBar = () => {
+      window.location.href = `/detail/19`;
+    };
  
     onMounted(() => {
       loadShopData();
@@ -53,7 +57,8 @@ export default {
       t,
       locale,
       shopData,
-      toPrevious
+      toPrevious,
+      goBannerBar
     };
   },
 };
@@ -62,7 +67,7 @@ export default {
 <template>
   <Header title="合作店家" />
   <main id="index">
-    <div class="container" id="banner"></div>
+    <div class="container monthStar" id="banner" @click="goBannerBar()"></div>
     <div class="container" id="bars">
       <div class="row">
         <div class="col-12 px-5 BarDetailTitle">

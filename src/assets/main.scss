@@ -78,7 +78,7 @@ main {
         background-repeat: no-repeat;
         background-image: url('../assets/img/banner.png');
         &.monthStar{
-            background-image: url('../assets/img/highlight/bar_pun.jpg');
+            background-image: url('/assets/img/highlight/bar_pun.jpg');
         }
 
     }
@@ -93,7 +93,7 @@ main {
 
         /* Custom style for carousel indicators */
         .carousel-indicators {
-            top: 120px;
+            top: 150px;
         }
 
         .carousel-indicators button {
