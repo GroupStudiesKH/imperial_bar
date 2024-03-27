@@ -67,7 +67,7 @@ export default {
 <template>
   <Header />
   <main id="index">
-    <div class="container" id="banner" @click="goBannerBar()"></div>
+    <div class="container monthStar" id="banner" @click="goBannerBar()"></div>
     <div class="container" id="bars">
       <div class="row">
         <div class="col-12 px-5 BarDetailTitle">
