@@ -97,6 +97,10 @@ export default {
       requestAnimationFrame(scrollStep);
     };
 
+    const goBannerBar = () => {
+      router.push({ path: "/detail/19" });
+    };
+
     const scrollToPrevSlide = (carouselId) => {
       //scroll 290px
       const carousel = document.getElementById(carouselId);
@@ -106,7 +110,7 @@ export default {
         case `northShop`:
           northPage.value--;
           break;
-      
+
         case `midShop`:
           midPage.value--;
           break;
@@ -162,6 +166,7 @@ export default {
       northPage,
       midPage,
       southPage,
+      goBannerBar,
     };
   },
 };
@@ -170,7 +175,7 @@ export default {
 <template>
   <Header />
   <main id="index">
-    <div class="container" id="banner"></div>
+    <div class="container" id="banner" @click="goBannerBar()"></div>
     <div class="container" id="bars">
       <div class="row">
         <div class="col-12 px-5 topBarTitle">

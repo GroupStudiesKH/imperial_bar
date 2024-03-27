@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="container">
-      <img src="/assets/img/logo.png" class="logo" alt="logo" />
+      <router-link :to="{name: 'home' }"><img src="/assets/img/logo.png" class="logo" alt="logo" /></router-link>
       <span>{{ title }}</span>
     </div>
   </header>
@@ -43,13 +43,16 @@ export default {
       localStorage.setItem("locale", lang);
     };
 
-
+    const goHome = () => {
+      console.log(123)
+    };
 
     return {
       t,
       locale,
       setLocale,
       localeOptions,
+      goHome
     };
   },
 };
