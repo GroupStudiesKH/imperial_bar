@@ -186,8 +186,9 @@ main {
 
                 .annotation {
                     position: absolute;
-                    width: 350px;
+                    width: 100%;
                     margin-top: -5px;
+                    margin-left: -2.5rem;
                     text-align: center;
                     z-index: 2;
                     color: #fff;
@@ -234,7 +235,7 @@ main {
         }
 
         .BarDetailContent {
-            text-align: center;
+            text-align: left;
             font-size: 14px;
             line-height: 25px;
         }
