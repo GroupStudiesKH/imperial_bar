@@ -19,9 +19,9 @@ export default {
     const southShopData = ref([]);
     const northShopHighlight = ref([2, 3, 8, 7, 10, 12, 15, 18, 21, 24]);
     const northPage = ref(1);
-    const midShopHighlight = ref([51, 53, 55, 57, 59, 62, 65, 68, 72, 70]);
+    const midShopHighlight = ref([51, 53, 55, 57, 59, 62, 65, 68, 71, 70]);
     const midPage = ref(1);
-    const southShopHighlight = ref([81, 83, 85, 87, 89, 92, 95, 96, 93, 91]);
+    const southShopHighlight = ref([81, 83, 85, 87, 89, 92, 95, 96, 90, 91]);
     const southPage = ref(1);
     const route = useRoute();
 
