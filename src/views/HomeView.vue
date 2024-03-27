@@ -236,7 +236,7 @@ export default {
                 v-for="(shop, shopIndex) in midShopData"
                 :key="shopIndex"
               >
-                <router-link :to="`/detail/${shop.id}`">
+                <router-link :to="'/detail/' + shop.id">
                   <div class="octagonBar">
                     <div class="title">{{ shop.subtitle }}</div>
                     <div

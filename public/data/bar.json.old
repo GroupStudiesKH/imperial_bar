@@ -2,7 +2,7 @@
   {
     "id": 2,
     "location": "北部",
-    "class": "深夜酒吧",
+    "class": "晚餐小酌",
     "store_name": "Four play 1",
     "store_phone": "0227083898",
     "store_address": "台北市大安區東豐街49號",
@@ -106,6 +106,18 @@
     "store_ig": "https://www.instagram.com/times_bistro/",
     "subtitle": "日式串燒酒吧 享受茶香四溢夢幻調酒",
     "description": "隱身在東區巷弄內，料理以串燒為主的日式酒吧時光小酒館 Bistro。滿滿肉汁的月見雞肉丸、超人氣的月見漢堡排都是主廚的拿手好菜。調酒則以茶系列為主，也有解膩的沙瓦可供選擇!"
+  },
+  {
+    "id": 11,
+    "location": "北部",
+    "class": "晚餐小酌",
+    "store_name": "The British Club",
+    "store_phone": "",
+    "store_address": "台北市大安區仁愛路四段222巷15號",
+    "store_fb": "https://www.facebook.com/thebritishclubtaipei/?locale=zh_TW",
+    "store_ig": "https://www.instagram.com/the_british_club/",
+    "subtitle": "The British Club 英倫式硬漢風格酒吧",
+    "description": "歐洲鄉村風格的木門後，一場英倫式狂歡饗宴就此展開。香嫩的鐵板肋眼牛排、酥脆的希臘起司派，當然少不了純粹又後勁十足的調酒，不管是小酌還是暢飲，The British Club都是你的最佳選擇"
   },
   {
     "id": 12,
@@ -552,6 +564,18 @@
     "description": "城市裡的絕美秘境，韓式風格酒吧LEFT左派。以溫潤的褐色作為主色調，藤編的桌椅、擺飾為空間增添幾分居家的舒適感，香辣美味的韓式炸雞，搭配獨特風味特調酒款，週末到LEFT放鬆一下，讓緊張的生活慢下來吧!"
   },
   {
+    "id": 49,
+    "location": "中部",
+    "class": "派對聚餐",
+    "store_name": "ASH",
+    "store_phone": "",
+    "store_address": "台中市西區臺灣大道二段10號",
+    "store_fb": "https://www.facebook.com/p/AshTaichung-100064082233299/",
+    "store_ig": "https://www.instagram.com/ashtaichung/",
+    "subtitle": "閃爍霓虹燈 今晚就去奇幻之旅",
+    "description": "台灣大道上的超人氣名店，迷幻風格酒吧ASH，霓虹燈為室內映照出奇幻迷離的氣氛。酒單豐富多元，除了經典酒款外，創意調酒也十分具有新意。"
+  },
+  {
     "id": 50,
     "location": "中部",
     "class": "晚餐小酌",
@@ -780,6 +804,18 @@
     "description": "由《料理之王》冠軍陳首宏打造的異國風情餐酒館，主打將歐陸菜色與台灣在地食材相融合，用超高水準的廚藝挑動你的味蕾。店內提供多款創意調酒，酸甜系的\"禁果\"十分開胃解膩，配上主廚特製餐點，一起大快朵頤吧!"
   },
   {
+    "id": 69,
+    "location": "中部",
+    "class": "深夜酒吧",
+    "store_name": "PM Bistro (刪除)",
+    "store_phone": "",
+    "store_address": "台中市西區臺灣大道二段496號",
+    "store_fb": "",
+    "store_ig": "https://www.instagram.com/pm.bistro/",
+    "subtitle": "夜晚城市中 享受神秘微醺氛圍",
+    "description": "充滿現代美感的清水模風格酒吧，金屬感照明設計搭配簡約質感的牆面，渲染出神秘靜謐的氛圍。調酒已口味輕盈又不失層次感的風格為主，想享受夜晚都市的摩登氛圍，PM Bistro絕對是你的最佳選擇!"
+  },
+  {
     "id": 70,
     "location": "中部",
     "class": "深夜酒吧",
@@ -802,6 +838,30 @@
     "store_ig": "https://www.instagram.com/vibe.taichung/",
     "subtitle": "迷幻中式風格 感受慵懶慢步調",
     "description": "坐落於審計新村附近，迷幻神秘的燈光搭配中式復古的裝潢設計，慵懶舒適的座位充滿了令人放鬆的氛圍，下班後想和朋友一起來CHILL一下嗎?"
+  },
+  {
+    "id": 72,
+    "location": "中部",
+    "class": "晚餐小酌",
+    "store_name": "JUP(暫停營業)",
+    "store_phone": "",
+    "store_address": "",
+    "store_fb": "",
+    "store_ig": "",
+    "subtitle": "",
+    "description": "Jup是木星『Jupiter』的縮寫，代表著幸運之星。店內巧妙的運用樓層將不同風格的空間隔開，一樓是屬於甜點和輕調酒的空間，\\n 燈光明亮，裝潢以繽紛的馬卡龍色系為主。二樓供應特調，專為尋找夜生活的人提供小酌的空間，裝潢走輕奢路線，昏暗的燈光渲染著微醺的氣氛。不管你想要哪種夜晚，來JUP給你雙重感受一次滿足!"
+  },
+  {
+    "id": 73,
+    "location": "南部",
+    "class": "特色店家",
+    "store_name": "Bar Five",
+    "store_phone": "",
+    "store_address": "高雄市苓雅區仁義街2-4號",
+    "store_fb": "https://www.facebook.com/BarFiveTw/?locale=zh_TW",
+    "store_ig": "https://www.instagram.com/barfive_tw/",
+    "subtitle": "無酒單創意調酒 品嚐新意",
+    "description": "說起三多商圈的新人氣酒吧，Bar Five Cocktail絕對名列其中。店內聞名的不僅僅是無酒單客製化的創意調酒，最廣為人知的是這裡的黯然消魂飯，以\"bake\"的烹調手法在叉燒肉上淋上威士忌，再點火一次將酒燒乾，充滿酒香的獨特料理完成， 有機會一定要來品嘗一下!"
   },
   {
     "id": 74,
@@ -955,7 +1015,7 @@
     "store_phone": "073469997",
     "store_address": "高雄市三民區天祥二路18號",
     "store_fb": "https://m.facebook.com/p/%E8%A5%BF%E9%83%A8%E7%89%9B%E4%BB%94-Western-Cowboys-Pub-100063969066378/",
-    "store_ig": "",
+    "store_ig": "無IG",
     "subtitle": "西部牛仔風 洋溢濃厚美式風情",
     "description": "美式風格外觀的西部牛仔酒吧，店內卻供應著饕客們口耳相傳的美味熱炒料理，一道道佳餚配上美式復古特色調酒出乎意料的超涮嘴。這裡的酒單也非常多元，老闆有著宣建平有留美背景，設計出500種洋溢著濃濃美國風情的調酒，是品酒愛好者的天堂。"
   },
@@ -1020,6 +1080,18 @@
     "description": "隱身在巷弄間的文青風餐酒館，最受歡迎的餐點非\"西班牙蒜味鮮蝦\"莫屬，鮮甜扎實的蝦肉，淋上主廚精心調製的蒜味油，再搭配細膩順口的生啤酒，絕對能給你味蕾帶來至高享受。"
   },
   {
+    "id": 93,
+    "location": "南部",
+    "class": "晚餐小酌",
+    "store_name": "無名會館 Wuming Bar",
+    "store_phone": "",
+    "store_address": "高雄市前金區仁德街246號",
+    "store_fb": "https://www.facebook.com/wumingbar/?locale=zh_TW",
+    "store_ig": "https://www.instagram.com/wumingbar/",
+    "subtitle": "無名又神秘？小資上班族愛店",
+    "description": "被木牆緊緊遮掩，店面外觀只有一個\"無名會館\"的招牌，如此神秘的角落，裡面卻是充滿古典氣氛、溫馨又充滿歡笑的酒吧，平價又高品質的調酒，再加上營業時間到天亮，瞬間成為附近小資上班族下班後的最常去的愛店。"
+  },
+  {
     "id": 94,
     "location": "南部",
     "class": "深夜酒吧",
@@ -1078,65 +1150,5 @@
     "store_ig": "https://www.instagram.com/vibetainannightclub/",
     "subtitle": "夜店風格酒吧 釋放壓力狂歡吧",
     "description": "擁有華麗舞池的夜店風格酒吧，想找個地方釋放壓力、盡情享樂嗎? 來 Vibe準沒錯! DJ熱情的電音音樂，絕對將現場氣氛炒到最嗨!"
-  },
-  {
-    "id": 103,
-    "location": "南部",
-    "class": "特色店家",
-    "store_name": "風 Bar ( fan bar)",
-    "store_phone": "072412638",
-    "store_address": "高雄市新興區文橫一路5巷23號",
-    "store_fb": "https://www.facebook.com/wind.bar.taiwan/?locale=zh_TW",
-    "store_ig": "https://www.instagram.com/bar.wind/?hl=zh-tw",
-    "subtitle": "花果系調酒遇上花藝之美🌹",
-    "description": "充滿花果清香的創意調酒，遇上典雅綻放的花藝之美，讓風Bar帶給你美的夜晚饗宴。"
-  },
-  {
-    "id": 104,
-    "location": "南部",
-    "class": "日式居酒屋",
-    "store_name": "Bar Lonely",
-    "store_phone": "0966022075",
-    "store_address": "台南市中西區民生路一段157巷11號1樓",
-    "store_fb": "https://www.facebook.com/barlonely",
-    "store_ig": "https://www.instagram.com/bar_lonely/",
-    "subtitle": "昭和風日式老宅酒吧 茶酒帶你環遊世界",
-    "description": "穿越時空，環繞昭和時期的濃濃日式復古氛圍。茶香四溢，搭配來自世界各地各式各樣的茶種精心調製的創意調酒，刺激你的味蕾神經，顛覆你對茶類調酒的想像。"
-  },
-  {
-    "id": 105,
-    "location": "南部",
-    "class": "特色店家",
-    "store_name": "Lonely",
-    "store_phone": "0966022075",
-    "store_address": "台南市中西區民生路一段157巷11號1樓",
-    "store_fb": "https://www.facebook.com/barlonely",
-    "store_ig": "https://www.instagram.com/bar_lonely/",
-    "subtitle": "昭和風日式老宅酒吧 終結你的lonely",
-    "description": "燈籠高高掛起，走進光暈下的籠裏 Bar Lonely彷彿穿越時空回到昭和時代，復古喫茶店的造型與充滿日式風情的創意調酒，絕對能終結你的Lonely，帶給你一個難忘之夜。"
-  },
-  {
-    "id": 106,
-    "location": "南部",
-    "class": "特色店家",
-    "store_name": "Mozaiku（Mosaic）",
-    "store_phone": "",
-    "store_address": "台南市北區國華街四段5巷15號",
-    "store_fb": "https://www.facebook.com/BarMozaiku/?locale=zh_TW",
-    "store_ig": "https://www.instagram.com/barmozaiku/",
-    "subtitle": "給愛喝酒的你 專屬高級感秘密基地",
-    "description": "外觀十分高冷的 Bar Mozaiku ，是南部愛酒人士們的秘密基地。超高水準的無菜單調酒，絕對能針對你的喜好調出最合你胃口的調酒，在搭上同樣高水準的甜點料理，把你的煩惱一掃而空!"
-  },
-  {
-    "id": 107,
-    "location": "南部",
-    "class": "晚餐小酌",
-    "store_name": "酉酒",
-    "store_phone": "0956052019",
-    "store_address": "高雄市忠孝一路22-1號2樓",
-    "store_fb": "https://m.facebook.com/61553296623681/",
-    "store_ig": "https://www.instagram.com/yojo.bistro?igsh=MTlrajN1enVvM3l6ZQ%3D%3D&utm_source=qr",
-    "subtitle": "絕讚的微醺氣氛 夜晚的故事由你來書寫",
-    "description": "以深藍色為主色調的空間，舒適又不失高級感，點上一盞盞鵝黃色的暖燈，配上一杯精緻夢幻的調酒，來這裡和酉酒一起書寫屬於你的夜晚故事吧!"
   }
 ]
