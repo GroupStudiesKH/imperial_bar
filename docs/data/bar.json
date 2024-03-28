@@ -77,7 +77,7 @@
     "class": "派對聚餐",
     "store_name": "Nep",
     "store_phone": "0225210069",
-    "store_address": "台北市中山區天津街63號號B1",
+    "store_address": "台北市中山區天津街63號B1",
     "store_fb": "https://www.facebook.com/nep6363/?locale=zh_TW",
     "store_ig": "https://www.instagram.com/neploungebar/",
     "subtitle": "Nep. Lounge Bar 水波粼粼的迷幻酒吧🪐",
@@ -149,7 +149,7 @@
     "class": "深夜酒吧",
     "store_name": "Dark seat",
     "store_phone": "0225251500",
-    "store_address": "台北市中山區林森北路133巷16號號地下室",
+    "store_address": "台北市中山區林森北路133巷16號地下室",
     "store_fb": "",
     "store_ig": "https://www.instagram.com/dark.seat/",
     "subtitle": "Dark seat 深夜中的美食與好酒🍜",
@@ -312,18 +312,6 @@
     "description": "高空中的海底隧道，信義區絕美海鮮餐酒館。Sea To Sky是Smith & Wollensky的新品牌，料理以法式經典元素為核心，融入日式精緻的調理手法，搭配新鮮海鮮與牛排，將味蕾感受提升極致。座位區投影燈光互相照映，營造出宛如置身天空與海底的沉浸式體用餐驗。"
   },
   {
-    "id": 29,
-    "location": "北部",
-    "class": "",
-    "store_name": "Coya(刪除0201)",
-    "store_phone": "",
-    "store_address": "台北市松山區市民大道四段129號2樓",
-    "store_fb": "https://www.facebook.com/CoyaTaipei/",
-    "store_ig": "https://www.instagram.com/coya_taipei/",
-    "subtitle": "低奢高級 是夜晚的質感代名詞",
-    "description": "低調奢華感的夜店風格酒吧，除了寬敞舒適的環境外，酒單也非常多元應有盡有，其中獨特的高級香檳調酒也是一大賣點。還有限時DJ現場表演，搭配360度環繞音響，將夜晚氣氛嗨到最高點!"
-  },
-  {
     "id": 30,
     "location": "北部",
     "class": "派對聚餐",
@@ -456,18 +444,6 @@
     "description": "擁有超好吃義大利麵的信義區酒吧Sandalwood Taipei，調酒水準也是一流，擅長將茶與水果搭配，像是日月潭紅玉紅茶配上西瓜、三峽碧螺春茶搭配哈密瓜等等組合，想嘗試獨特風味調酒嗎?來這裡準沒錯!"
   },
   {
-    "id": 41,
-    "location": "北部",
-    "class": "",
-    "store_name": "Settle(刪除0201)",
-    "store_phone": "",
-    "store_address": "台北市大安區光復南路240巷29號",
-    "store_fb": "https://www.facebook.com/settletaipei/",
-    "store_ig": "https://www.instagram.com/settle.taipei/",
-    "subtitle": "質感微醺選擇 Settle給你家一般的舒適體驗",
-    "description": "充滿生活感的居家風格酒吧，Settle大地灰色調的裝潢，搭配沙發、地毯等等有居家感的擺飾，就是要讓客人有回到家的舒適感。料理也以童年的記憶為出發點，設計出一道道充滿回憶味道的家常菜菜單。"
-  },
-  {
     "id": 42,
     "location": "北部",
     "class": "晚餐小酌",
@@ -492,18 +468,6 @@
     "description": "坐落於信義A19，附近上班族下班後的秘密基地。舒適的氛圍搭上富有巧思的燈光設計，最適合想放鬆體驗微醺氛圍的你!"
   },
   {
-    "id": 44,
-    "location": "北部",
-    "class": "",
-    "store_name": "WOK by O'band(刪除0201)",
-    "store_phone": "",
-    "store_address": "台北市中山區龍江路18號",
-    "store_fb": "https://www.facebook.com/p/Tei-by-obond-100075950546556/",
-    "store_ig": "https://www.instagram.com/tei_by_obond/?hl=zh-tw",
-    "subtitle": "體驗世界級的冠軍調酒 WOK by O'band",
-    "description": "國際調酒大賽冠軍的Tom Liu 開的餐酒館， WOK by O'band的調酒融合台灣在地元素，既天馬行空又有滿滿創意。輕輕啜飲，感受舌尖綻放的不同層次風味，每一口都讓人感到驚喜連連，為你的味蕾帶來全新體驗!"
-  },
-  {
     "id": 45,
     "location": "中部",
     "class": "派對聚餐",
@@ -512,8 +476,8 @@
     "store_address": "台中市西屯區馬龍潭路119號",
     "store_fb": "https://www.facebook.com/s88957/?locale=zh_TW",
     "store_ig": "https://www.instagram.com/ricopadre_taichung/",
-    "subtitle": "『老子有錢』浮誇系餐酒館",
-    "description": "有私人大游泳池的浮誇系餐酒館，整間店就是一個超高級的Villa。Rico Padre 是西班牙文的『老子有錢』，超跩的店名和富麗堂皇的裝潢令人會心一笑.。店裡的調酒同店內氣氛一樣走華麗風格，歡迎到Rico Padre體驗一場品味與奢華的極致饗宴。"
+    "subtitle": "『老子有錢』都市中的世外桃源",
+    "description": "有私人大游泳池的都市中的世外桃源，整間店就是一個超高級的Villa。Rico Padre 是西班牙文的『老子有錢』，超跩的店名和富麗堂皇的裝潢令人會心一笑.。店裡的調酒同店內氣氛一樣走華麗風格，歡迎到Rico Padre體驗一場品味與奢華的極致饗宴。"
   },
   {
     "id": 46,
@@ -567,13 +531,13 @@
     "id": 51,
     "location": "中部",
     "class": "晚餐小酌",
-    "store_name": "Drinktopia",
+    "store_name": "DRINKTOPIA",
     "store_phone": "0972062960",
     "store_address": "台中市南屯區大墩十二街262號",
     "store_fb": "https://www.facebook.com/DRINKTOPIA2020/",
     "store_ig": "https://www.instagram.com/drinktopia_262/",
     "subtitle": "挑戰你的放縱極限! 幸福指數絕對爆表",
-    "description": "調酒+炸雞\"的超邪惡組合，Drinktopia挑戰你的放縱極限! 高級又富麗堂皇的裝潢，店內洋溢著質感氛圍，品牌主理人William以藝術、宗教、文化為靈感研發特色酒單，為每一款飲品賦予意義。與週末炸雞俱樂部攜手合作，研發獨特的台式風味炸雞，在微醺之餘，來一盤超罪惡的紹興醉中翅，幸福指數絕對爆表。"
+    "description": "調酒+炸雞\"的超邪惡組合，DRINKTOPIA挑戰你的放縱極限! 高級又富麗堂皇的裝潢，店內洋溢著質感氛圍，品牌主理人William以藝術、宗教、文化為靈感研發特色酒單，為每一款飲品賦予意義。與週末炸雞俱樂部攜手合作，研發獨特的台式風味炸雞，在微醺之餘，來一盤超罪惡的紹興醉中翅，幸福指數絕對爆表。"
   },
   {
     "id": 52,
