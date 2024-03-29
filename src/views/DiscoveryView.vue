@@ -329,7 +329,7 @@ export default {
                 <div class="title">{{ shop.subtitle }}</div>
                 <div
                   class="bar_img"
-                  :style="`background-image: url('/assets/img/shop/${shop.id}-1.jpg?time=202403291325')`"
+                  :style="`background-image: url('/assets/img/octagon/${shop.id}.png?time=202403291325')`"
                 ></div>
                 <div class="bar_title">
                   <h5>{{ shop.store_name }}</h5>
