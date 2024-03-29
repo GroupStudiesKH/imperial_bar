@@ -17,7 +17,7 @@ export default {
     const route = useRoute();
     const shopID = route.params.id;
     const locationSelected = ref("北部");
-    const styleSelected = ref("派對聚餐");
+    const styleSelected = ref("");
 
     const loadShopData = async () => {
       try {
