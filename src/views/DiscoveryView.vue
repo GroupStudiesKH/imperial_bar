@@ -76,12 +76,10 @@ export default {
       //scroll to bottom, load more
       window.onscroll = function () {
         if (
-          window.innerHeight + window.scrollY >= document.body.offsetHeight
+          window.innerHeight + window.scrollY >= document.body.offsetHeight - 200
         ) {
-          currentPage.value++;
-          setTimeout(() => {
-            loadShopData();
-          }, 200);
+          currentPage.value++;          
+          loadShopData();
 
         }
       };
