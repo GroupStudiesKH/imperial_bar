@@ -17,7 +17,9 @@ export default {
     const route = useRoute();
     const shopID = route.params.id;
     const locationSelected = ref("北部");
-    const styleSelected = ref("派對聚餐");
+    const styleSelected = ref("");
+    const barPerPage = 6;
+    const currentPage = ref(1);
 
     const loadShopData = async () => {
       try {
@@ -34,6 +36,11 @@ export default {
             (item) => item.class == styleSelected.value
           );
         }
+
+        shopData.value = shopData.value.slice(
+          0,
+          currentPage.value * barPerPage
+        );
 
       } catch (error) {
         console.error("There was a problem with the fetch operation:", error);
@@ -63,6 +70,19 @@ export default {
           }
         );
       });
+
+      //scroll to bottom, load more
+      window.onscroll = function () {
+        if (
+          window.innerHeight + window.scrollY >= document.body.offsetHeight
+        ) {
+          currentPage.value++;
+          setTimeout(() => {
+            loadShopData();
+          }, 200);
+
+        }
+      };
     });
 
     return {
