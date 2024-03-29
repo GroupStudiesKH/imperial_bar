@@ -48,11 +48,13 @@ export default {
     };
 
     const changeLocation = (location) => {
+      page.value = 1;
       locationSelected.value = location;
       loadShopData();
     };
 
     const changeStyle = (style) => {
+      page.value = 1;
       styleSelected.value = style;
       loadShopData();
     };
