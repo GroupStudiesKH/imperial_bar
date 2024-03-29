@@ -36,18 +36,6 @@
     "description": "充滿沙灘風情的露天酒吧，讓精釀啤酒、熱帶水果風味調酒與新鮮的海鮮料理，帶你離開城市到來到熱帶島島嶼，享受悠然自在的海邊氛圍。"
   },
   {
-    "id": 5,
-    "location": "北部",
-    "class": "",
-    "store_name": "Chill bistro(無續約)",
-    "store_phone": "",
-    "store_address": "台北市信義區基隆路一段163號後門",
-    "store_fb": "https://www.facebook.com/chillbistroandbar/",
-    "store_ig": "https://www.instagram.com/chillbistroandbar/",
-    "subtitle": "去憂餐酒館Chill Bistro 浮誇系調酒",
-    "description": "打破你對華麗的幻想，Chill bistro 主打浮誇風格，每一杯調酒都宛如藝術品般精緻。 融合水果和香草獨特香氣的夢幻調酒，喜歡酸甜酒感的你絕對不容錯過!"
-  },
-  {
     "id": 6,
     "location": "北部",
     "class": "深夜酒吧",
@@ -82,18 +70,6 @@
     "store_ig": "https://www.instagram.com/neploungebar/",
     "subtitle": "Nep. Lounge Bar 水波粼粼的迷幻酒吧🪐",
     "description": "墜入微醺的迷幻之海，Nep. Lounge Bar將吧檯上方設計成透明水族箱，折射出粼粼水波紋的光影，搭配現代時尚風格的調酒，渲染獨特的迷幻氣氛，彷彿置身海王星。"
-  },
-  {
-    "id": 9,
-    "location": "北部",
-    "class": "",
-    "store_name": "Ganymede(無續約)",
-    "store_phone": "",
-    "store_address": "台北市大安區敦化南路一段190巷2號",
-    "store_fb": "https://www.facebook.com/ganymede.tpe/",
-    "store_ig": "https://www.instagram.com/ganymedetpe/",
-    "subtitle": "最時髦的變裝皇后酒吧 Ganymede 💄",
-    "description": "炫彩奪目的燈光亮起，今夜最華麗的變裝皇后秀就此上演。舉起手中的香檳，在Ganymede盡情感受不同文化之間的交流、碰撞，一起為最閃亮的自己喝采吧!"
   },
   {
     "id": 10,
@@ -564,18 +540,6 @@
     "description": "南洋海島夜店風格酒吧，Myth-Ocean將峇里島風情注入台中。茂盛的棕梠樹，舒適的海島床，讓空間充滿渡假氛圍。現場還有火辣的鋼管舞秀可以欣賞，跟朋友一起來嗨翻天吧!"
   },
   {
-    "id": 54,
-    "location": "中部",
-    "class": "",
-    "store_name": "AMPM",
-    "store_phone": "",
-    "store_address": "台中市西屯區文心路三段54號1F",
-    "store_fb": "https://www.facebook.com/p/AMPM_Bar-100057480608023/",
-    "store_ig": "未有IG",
-    "subtitle": "",
-    "description": "（11月休息）"
-  },
-  {
     "id": 55,
     "location": "中部",
     "class": "晚餐小酌",
@@ -636,18 +600,6 @@
     "description": "餐酒館內的隱藏版酒吧RiZY，供應地中海沿岸為主題的調酒，氣氛悠閒靜謐，主打簡約低調美學，希望能給城市中的人一個遠離紛擾的秘境，店內餐點由樓下的里頌地中海餐酒館提供，美味道地的地中海沿岸料理，令人流連忘返。"
   },
   {
-    "id": 60,
-    "location": "中部",
-    "class": "",
-    "store_name": "Matches(營業至10/31)",
-    "store_phone": "",
-    "store_address": "台中市西區東興路三段238號右邊門2 樓",
-    "store_fb": "https://www.facebook.com/matchesbar/?locale=zh_TW",
-    "store_ig": "https://www.instagram.com/matchesbar/",
-    "subtitle": "歐式大理石風 點綴高級現代感",
-    "description": "高級現代大理石風格餐酒館，在這裡能吃到美味又道地的歐式菜色，熟客們最愛的爐烤牛排更是一絕，表面焦脆飄香，內裡呈現鮮嫩的粉色色澤，令人垂延三尺。這裡的調酒走經典正統風貌，將經典調酒更臻極致，若想體驗道地歐菜與經典調酒絕不能錯過!"
-  },
-  {
     "id": 61,
     "location": "中部",
     "class": "派對聚餐",
@@ -682,18 +634,6 @@
     "store_ig": "沒有IG",
     "subtitle": "偽裝高級西裝訂製店 體會復古英倫時光",
     "description": "偽裝成高級西裝訂製店的紳士風酒吧，走進店內彷彿來到復古英倫時光，氣氛安靜又舒適，牆上掛著高級訂製西服，點綴菱格紋牆壁將整個空間質感提升，老裁縫的的調酒走客製化路線，也有獨特的威士忌熱酒、精釀啤酒供選擇。"
-  },
-  {
-    "id": 64,
-    "location": "中部",
-    "class": "",
-    "store_name": "Somm Juice(不續約)",
-    "store_phone": "",
-    "store_address": "台中市西區美村路一段149巷19號1樓",
-    "store_fb": "https://www.facebook.com/people/Somm-Juice%E7%B4%A2%E7%91%AA%E8%8E%89%E4%BA%9E/100064141028835/",
-    "store_ig": "https://www.instagram.com/somm_juice/",
-    "subtitle": "翻玩水果調酒 特調多變化",
-    "description": "以水果為主題翻玩各式調酒，運用新鮮食材打造多層次風味。店內供應充滿異國風情的燉飯、麵食、甜點，現場不定時還會有音樂演出，昏暗的黃光散發慵懶放鬆的氣氛，最適合作為行程的最後一站，和朋友們一起來好好放鬆一下吧!"
   },
   {
     "id": 65,
