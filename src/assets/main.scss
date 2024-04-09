@@ -91,9 +91,9 @@ main {
         margin-top: 60px;
 
         // /* Custom style for carousel indicators */
-        // .carousel-indicators {
-        //     top: 130px;
-        // }
+        .carousel-indicators {
+            margin-bottom: 0;
+        }
 
         .carousel-indicators button {
             background-color: #fff;
