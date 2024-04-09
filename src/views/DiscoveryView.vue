@@ -180,52 +180,52 @@ export default {
       <div class="carousel-inner">
         <div class="carousel-item active">
           <router-link :to="{ name: 'discovery-detail', params: { id: 10 } }">
-            <img src="/assets/img/discovery/10.jpg" class="d-block w-100" alt="..." />
+            <img src="/assets/img/discovery/10.png" class="d-block w-100" alt="..." />
           </router-link>
         </div>
         <div class="carousel-item">
           <router-link :to="{ name: 'discovery-detail', params: { id: 16 } }">
-            <img src="/assets/img/discovery/16.jpg" class="d-block w-100" alt="..." />
+            <img src="/assets/img/discovery/16.png" class="d-block w-100" alt="..." />
           </router-link>
         </div>
         <div class="carousel-item">
           <router-link :to="{ name: 'discovery-detail', params: { id: 19 } }">
-            <img src="/assets/img/discovery/19.jpg" class="d-block w-100" alt="..." />
+            <img src="/assets/img/discovery/19.png" class="d-block w-100" alt="..." />
           </router-link>
         </div>
         <div class="carousel-item">
           <router-link :to="{ name: 'discovery-detail', params: { id: 40 } }">
-            <img src="/assets/img/discovery/40.jpg" class="d-block w-100" alt="..." />
+            <img src="/assets/img/discovery/40.png" class="d-block w-100" alt="..." />
           </router-link>
         </div>
         <div class="carousel-item">
           <router-link :to="{ name: 'discovery-detail', params: { id: 45 } }">
-            <img src="/assets/img/discovery/45.jpg" class="d-block w-100" alt="..." />
+            <img src="/assets/img/discovery/45.png" class="d-block w-100" alt="..." />
           </router-link>
         </div>
         <div class="carousel-item">
           <router-link :to="{ name: 'discovery-detail', params: { id: 50 } }">
-            <img src="/assets/img/discovery/50.jpg" class="d-block w-100" alt="..." />
+            <img src="/assets/img/discovery/50.png" class="d-block w-100" alt="..." />
           </router-link>
         </div>
         <div class="carousel-item">
           <router-link :to="{ name: 'discovery-detail', params: { id: 51 } }">
-            <img src="/assets/img/discovery/51.jpg" class="d-block w-100" alt="..." />
+            <img src="/assets/img/discovery/51.png" class="d-block w-100" alt="..." />
           </router-link>
         </div>
         <div class="carousel-item">
           <router-link :to="{ name: 'discovery-detail', params: { id: 76 } }">
-            <img src="/assets/img/discovery/76.jpg" class="d-block w-100" alt="..." />
+            <img src="/assets/img/discovery/76.png" class="d-block w-100" alt="..." />
           </router-link>
         </div>
         <div class="carousel-item">
           <router-link :to="{ name: 'discovery-detail', params: { id: 79 } }">
-            <img src="/assets/img/discovery/79.jpg" class="d-block w-100" alt="..." />
+            <img src="/assets/img/discovery/79.png" class="d-block w-100" alt="..." />
           </router-link>
         </div>
         <div class="carousel-item">
           <router-link :to="{ name: 'discovery-detail', params: { id: 80 } }">
-            <img src="/assets/img/discovery/80.jpg" class="d-block w-100" alt="..." />
+            <img src="/assets/img/discovery/80.png" class="d-block w-100" alt="..." />
           </router-link>
         </div>
       </div>

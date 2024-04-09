@@ -68,7 +68,7 @@ main {
 
     #banner {
         width: 100%;
-        height: 180px;
+        height: 100px;
         background-color: #000;
         color: #fff;
         text-align: center;
@@ -78,7 +78,7 @@ main {
         background-repeat: no-repeat;
         background-image: url('../assets/img/banner.png');
         &.monthStar{
-            background-image: url('/assets/img/highlight/bar_pun.jpg');
+            background-image: url('/assets/img/highlight/bar_pun.png');
         }
 
     }
