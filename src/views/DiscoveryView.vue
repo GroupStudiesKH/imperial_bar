@@ -55,6 +55,13 @@ export default {
 
     const changeStyle = (style) => {
       currentPage.value = 1;
+
+      if(styleSelected.value == style){
+        styleSelected.value = '';
+        loadShopData();
+        return;
+      }
+
       styleSelected.value = style;
       loadShopData();
     };
