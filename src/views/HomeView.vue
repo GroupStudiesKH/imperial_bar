@@ -313,10 +313,6 @@ export default {
           </button>
         </div>
       </div>
-
-      <div id="page_bottom">
-        <img src="/assets/img/previous.png" />
-      </div>
     </div>
   </main>
 </template>

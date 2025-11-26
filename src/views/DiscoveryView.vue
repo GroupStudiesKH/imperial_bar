@@ -41,7 +41,6 @@ export default {
           0,
           currentPage.value * barPerPage
         );
-
       } catch (error) {
         console.error("There was a problem with the fetch operation:", error);
       }
@@ -56,8 +55,8 @@ export default {
     const changeStyle = (style) => {
       currentPage.value = 1;
 
-      if(styleSelected.value == style){
-        styleSelected.value = '';
+      if (styleSelected.value == style) {
+        styleSelected.value = "";
         loadShopData();
         return;
       }
@@ -83,11 +82,11 @@ export default {
       //scroll to bottom, load more
       window.onscroll = function () {
         if (
-          window.innerHeight + window.scrollY >= document.body.offsetHeight - 200
+          window.innerHeight + window.scrollY >=
+          document.body.offsetHeight - 200
         ) {
-          currentPage.value++;          
+          currentPage.value++;
           loadShopData();
-
         }
       };
     });
@@ -106,7 +105,7 @@ export default {
 </script>
 
 <template>
-  <Header title="合作店家" />
+  <Header title="今晚去哪呢？" />
   <main>
     <div
       id="banner_carousel"
@@ -187,52 +186,92 @@ export default {
       <div class="carousel-inner">
         <div class="carousel-item active">
           <router-link :to="{ name: 'discovery-detail', params: { id: 10 } }">
-            <img src="/assets/img/discovery/10.png" class="d-block w-100" alt="..." />
+            <img
+              src="/assets/img/discovery/10.png"
+              class="d-block w-100"
+              alt="..."
+            />
           </router-link>
         </div>
         <div class="carousel-item">
           <router-link :to="{ name: 'discovery-detail', params: { id: 16 } }">
-            <img src="/assets/img/discovery/16.png" class="d-block w-100" alt="..." />
+            <img
+              src="/assets/img/discovery/16.png"
+              class="d-block w-100"
+              alt="..."
+            />
           </router-link>
         </div>
         <div class="carousel-item">
           <router-link :to="{ name: 'discovery-detail', params: { id: 19 } }">
-            <img src="/assets/img/discovery/19.png" class="d-block w-100" alt="..." />
+            <img
+              src="/assets/img/discovery/19.png"
+              class="d-block w-100"
+              alt="..."
+            />
           </router-link>
         </div>
         <div class="carousel-item">
           <router-link :to="{ name: 'discovery-detail', params: { id: 40 } }">
-            <img src="/assets/img/discovery/40.png" class="d-block w-100" alt="..." />
+            <img
+              src="/assets/img/discovery/40.png"
+              class="d-block w-100"
+              alt="..."
+            />
           </router-link>
         </div>
         <div class="carousel-item">
           <router-link :to="{ name: 'discovery-detail', params: { id: 45 } }">
-            <img src="/assets/img/discovery/45.png" class="d-block w-100" alt="..." />
+            <img
+              src="/assets/img/discovery/45.png"
+              class="d-block w-100"
+              alt="..."
+            />
           </router-link>
         </div>
         <div class="carousel-item">
           <router-link :to="{ name: 'discovery-detail', params: { id: 50 } }">
-            <img src="/assets/img/discovery/50.png" class="d-block w-100" alt="..." />
+            <img
+              src="/assets/img/discovery/50.png"
+              class="d-block w-100"
+              alt="..."
+            />
           </router-link>
         </div>
         <div class="carousel-item">
           <router-link :to="{ name: 'discovery-detail', params: { id: 51 } }">
-            <img src="/assets/img/discovery/51.png" class="d-block w-100" alt="..." />
+            <img
+              src="/assets/img/discovery/51.png"
+              class="d-block w-100"
+              alt="..."
+            />
           </router-link>
         </div>
         <div class="carousel-item">
           <router-link :to="{ name: 'discovery-detail', params: { id: 76 } }">
-            <img src="/assets/img/discovery/76.png" class="d-block w-100" alt="..." />
+            <img
+              src="/assets/img/discovery/76.png"
+              class="d-block w-100"
+              alt="..."
+            />
           </router-link>
         </div>
         <div class="carousel-item">
           <router-link :to="{ name: 'discovery-detail', params: { id: 79 } }">
-            <img src="/assets/img/discovery/79.png" class="d-block w-100" alt="..." />
+            <img
+              src="/assets/img/discovery/79.png"
+              class="d-block w-100"
+              alt="..."
+            />
           </router-link>
         </div>
         <div class="carousel-item">
           <router-link :to="{ name: 'discovery-detail', params: { id: 80 } }">
-            <img src="/assets/img/discovery/80.png" class="d-block w-100" alt="..." />
+            <img
+              src="/assets/img/discovery/80.png"
+              class="d-block w-100"
+              alt="..."
+            />
           </router-link>
         </div>
       </div>
@@ -350,7 +389,7 @@ export default {
         </div>
       </div>
       <div id="page_bottom">
-        <img src="/assets/img/previous.png" />
+        © 精實企業顧問管理股份有限公司 / 統編: 96950197
       </div>
     </div>
   </main>

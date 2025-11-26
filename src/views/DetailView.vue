@@ -22,33 +22,31 @@ export default {
       description: "",
       store_fb: "",
       store_ig: "",
-    
     });
     const route = useRoute();
     const shopID = route.params.id;
 
     const loadShopData = async () => {
       try {
-        const response = await fetch('/data/bar.json'); // 載入 JSON 檔案
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          let data = await response.json(); // 將 JSON 資料轉換為陣列
-          shopData.value = data.find((item) => item.id == shopID);
-        } catch (error) {
-          console.error('There was a problem with the fetch operation:', error);
+        const response = await fetch("/data/bar.json"); // 載入 JSON 檔案
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
         }
-    }
-    
+        let data = await response.json(); // 將 JSON 資料轉換為陣列
+        shopData.value = data.find((item) => item.id == shopID);
+      } catch (error) {
+        console.error("There was a problem with the fetch operation:", error);
+      }
+    };
+
     const toPrevious = () => {
       router.go(-1);
-    }
-
+    };
 
     const goBannerBar = () => {
       window.location.href = `/detail/19`;
     };
- 
+
     onMounted(() => {
       loadShopData();
     });
@@ -58,7 +56,7 @@ export default {
       locale,
       shopData,
       toPrevious,
-      goBannerBar
+      goBannerBar,
     };
   },
 };
@@ -76,7 +74,10 @@ export default {
         <div class="col-12 px-5 BarDetailName">
           <div>
             <h4>{{ shopData.subtitle }}</h4>
-            <div class="img" :style="`background-image: url('/assets/img/shop/${shopData.id}-1.jpg?time=202403291325')`"></div>
+            <div
+              class="img"
+              :style="`background-image: url('/assets/img/shop/${shopData.id}-1.jpg?time=202403291325')`"
+            ></div>
           </div>
         </div>
 
@@ -104,14 +105,30 @@ export default {
         </div>
 
         <div class="col-12 px-5 BarDetailSocial">
-          <a v-if="shopData.store_fb.length > 0" :href="shopData.store_fb" target="_blank"><img src="/assets/img/share_fb.png" /></a>
-          <a v-if="shopData.store_ig.length > 0" :href="shopData.store_ig" target="_blank"><img src="/assets/img/share_ig.png" /></a>
-          <a :href="`https://www.google.com.tw/maps/place/${shopData.store_address}`" target="_blank"><img src="/assets/img/share_googlemap.png" /></a>
+          <a
+            v-if="shopData.store_fb.length > 0"
+            :href="shopData.store_fb"
+            target="_blank"
+            ><img src="/assets/img/share_fb.png"
+          /></a>
+          <a
+            v-if="shopData.store_ig.length > 0"
+            :href="shopData.store_ig"
+            target="_blank"
+            ><img src="/assets/img/share_ig.png"
+          /></a>
+          <a
+            :href="`https://www.google.com.tw/maps/place/${shopData.store_address}`"
+            target="_blank"
+            ><img src="/assets/img/share_googlemap.png"
+          /></a>
         </div>
 
         <div class="col-12 px-5 BarDetailAction">
           <a class="getTicket"><img src="/assets/img/get_ticket.png" /></a>
-          <a class="previous" @click="toPrevious()"><img src="/assets/img/previous_member.png" /></a>
+          <a class="previous" @click="toPrevious()"
+            ><img src="/assets/img/previous_member.png"
+          /></a>
         </div>
       </div>
 
